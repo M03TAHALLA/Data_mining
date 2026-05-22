@@ -1,0 +1,1213 @@
+Module_ID,Risk_Score,Risk_Level,Top_Risk_Factor,Recommendation
+289,99.81481405420864,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+170,99.49184058573032,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+156,99.14645358785634,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+240,98.53843252274874,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+154,98.50202686472748,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+93,98.37469663319904,🔴 CRITICAL RISK,v,Review and refactor high-risk metrics
+298,98.32776672382812,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+302,98.28210084026519,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+262,98.10684662410655,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+112,98.00955529842955,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+304,97.64104797160299,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+733,97.46115624573419,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+165,97.11541082789518,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+310,96.96131689934715,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+263,96.82652384031157,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+909,96.69961069981342,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+181,96.54562039789447,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+301,95.75267980629151,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+312,95.36889333177493,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+293,95.27511850289258,🔴 CRITICAL RISK,uniq_Opnd,Review and refactor high-risk metrics
+286,95.05010566352232,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+219,94.97521563558595,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+1133,93.94789220493304,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+51,93.86632751261692,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+17,93.84652717806372,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+1075,93.33920521281178,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+307,93.25602380110078,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+231,93.25084761054944,🔴 CRITICAL RISK,ev(g),Reduce cyclomatic complexity
+213,92.6959601610751,🔴 CRITICAL RISK,lOCode,Split into smaller functions
+279,92.63410392137932,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+911,92.47107303412234,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+20,92.05981306605558,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+209,91.5904697677834,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+878,91.58021976612238,🔴 CRITICAL RISK,lOCode,Split into smaller functions
+119,91.57970781940845,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+59,91.51398643867306,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+141,91.33444787103016,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+24,91.24864161452281,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+734,90.04884081940048,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+731,89.65944771935837,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+122,89.60274859540442,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+12,89.48767591266353,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+536,88.68214886544412,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+137,88.3665372420635,🔴 CRITICAL RISK,uniq_Opnd,Review and refactor high-risk metrics
+96,87.9125529427206,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+716,87.82976763304204,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+311,87.36042590965809,🔴 CRITICAL RISK,iv(g),Reduce cyclomatic complexity
+585,87.32940459966893,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+221,87.27611390877449,🔴 CRITICAL RISK,total_Opnd,Review and refactor high-risk metrics
+60,86.88211397603808,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+222,86.69490141007283,🔴 CRITICAL RISK,total_Opnd,Review and refactor high-risk metrics
+853,85.80557307787974,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+643,85.63879811482661,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+33,85.51568244026129,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+291,85.46196251857002,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+211,85.32117092425271,🔴 CRITICAL RISK,iv(g),Reduce cyclomatic complexity
+92,84.87612987219254,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+344,84.82280141071944,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+728,84.62353219609197,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+283,83.95879625718099,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+891,83.48032507167261,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+314,83.08925037088851,🔴 CRITICAL RISK,i,Review and refactor high-risk metrics
+871,82.8919486135869,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+115,82.67593267804105,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+111,82.66066479697913,🔴 CRITICAL RISK,uniq_Opnd,Review and refactor high-risk metrics
+169,82.63527031533809,🔴 CRITICAL RISK,lOComment,Split into smaller functions
+144,82.45066523779107,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+907,82.39061922084336,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+116,82.36001394264756,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+300,82.33493392964132,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+1061,82.31896456646987,🔴 CRITICAL RISK,ev(g),Reduce cyclomatic complexity
+726,82.3158531730565,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+276,82.14941633438323,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+714,81.79280097286038,🔴 CRITICAL RISK,uniq_Op,Review and refactor high-risk metrics
+961,81.3131516205267,🔴 CRITICAL RISK,uniq_Opnd,Review and refactor high-risk metrics
+949,81.01590732411304,🔴 CRITICAL RISK,uniq_Opnd,Review and refactor high-risk metrics
+95,80.93577448726896,🔴 CRITICAL RISK,lOBlank,Review and refactor high-risk metrics
+237,80.74183431498248,🔴 CRITICAL RISK,branchCount,Simplify branching logic
+31,80.6030253810232,🔴 CRITICAL RISK,d,Review and refactor high-risk metrics
+148,80.22793125935908,🔴 CRITICAL RISK,i,Review and refactor high-risk metrics
+732,80.14334599106681,🔴 CRITICAL RISK,t,Review and refactor high-risk metrics
+494,79.7796406715225,🟠 HIGH RISK,lOCode,Split into smaller functions
+277,79.58717288399257,🟠 HIGH RISK,lOCode,Split into smaller functions
+36,79.42401217361817,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+308,79.0967681848072,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+303,79.00119790323994,🟠 HIGH RISK,lOComment,Split into smaller functions
+295,78.87643420953296,🟠 HIGH RISK,lOComment,Split into smaller functions
+224,78.7789299908341,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+693,78.48371023607444,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+101,78.47576168837776,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+1080,77.98354219209313,🟠 HIGH RISK,lOComment,Split into smaller functions
+815,77.95311628399405,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+353,77.61815020951946,🟠 HIGH RISK,total_Op,Review and refactor high-risk metrics
+608,77.46896502715465,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+199,77.34184034488523,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+1154,77.07017703901184,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+685,76.8229302523759,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+2,76.53127769585178,🟠 HIGH RISK,lOComment,Split into smaller functions
+400,76.40447800665143,🟠 HIGH RISK,lOCode,Split into smaller functions
+214,76.23068306486527,🟠 HIGH RISK,total_Op,Review and refactor high-risk metrics
+1073,76.1405394521427,🟠 HIGH RISK,uniq_Opnd,Review and refactor high-risk metrics
+297,75.9808190481465,🟠 HIGH RISK,lOCode,Split into smaller functions
+835,75.96647047902636,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+73,75.77552553051522,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+102,75.6351467893177,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+157,75.62253399283676,🟠 HIGH RISK,lOComment,Split into smaller functions
+100,75.50338114634772,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+401,75.40168894536333,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+1030,75.07557028536131,🟠 HIGH RISK,uniq_Opnd,Review and refactor high-risk metrics
+136,74.94064782693323,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+485,74.53409443883206,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+32,74.52692059654214,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+103,74.48137489565929,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+1037,74.04445588905885,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+217,73.88510510553549,🟠 HIGH RISK,total_Op,Review and refactor high-risk metrics
+117,73.4081885438122,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+268,73.38976058884958,🟠 HIGH RISK,lOComment,Split into smaller functions
+753,73.30538006233608,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+186,73.2013288812066,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+430,73.02291808094172,🟠 HIGH RISK,lOComment,Split into smaller functions
+382,72.98596102905834,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+11,72.45354508398923,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+281,72.29717844724192,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+274,72.22629318109739,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+573,72.22123537338585,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+442,72.14338543281525,🟠 HIGH RISK,uniq_Opnd,Review and refactor high-risk metrics
+1122,72.13581459324202,🟠 HIGH RISK,lOComment,Split into smaller functions
+29,72.12441595110063,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+877,71.87255034703352,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+55,71.77808573066984,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+271,71.69275849094434,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+336,71.69038635162312,🟠 HIGH RISK,lOCode,Split into smaller functions
+131,71.56845625769613,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+1095,71.41744879334996,🟠 HIGH RISK,lOComment,Split into smaller functions
+132,71.37694842003157,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+1187,71.34971994585763,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+1016,71.2217353779931,🟠 HIGH RISK,v(g),Reduce cyclomatic complexity
+179,71.18651487232445,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+245,70.8891851976395,🟠 HIGH RISK,lOComment,Split into smaller functions
+166,70.66715964291643,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+901,70.45198449547469,🟠 HIGH RISK,lOComment,Split into smaller functions
+257,70.06203105879527,🟠 HIGH RISK,lOComment,Split into smaller functions
+834,70.01530866605829,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+402,69.93439222820706,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+63,69.57671694570593,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+973,69.50343369486373,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+456,69.4838004105498,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+1170,69.45372117249858,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+168,69.42443722672537,🟠 HIGH RISK,lOCode,Split into smaller functions
+912,69.42166988704017,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+810,69.38592636108257,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+313,69.31722495555071,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+927,68.93639711015378,🟠 HIGH RISK,loc,Split into smaller functions
+937,68.89362162696192,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+188,68.7864750975445,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+619,68.5675353034658,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+335,67.97741797510854,🟠 HIGH RISK,lOCode,Split into smaller functions
+895,67.96221022576296,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+1069,67.9106486362843,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+851,67.86651349236857,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+403,67.85108321626838,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+510,67.64721949213441,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+439,67.60168637763982,🟠 HIGH RISK,lOCode,Split into smaller functions
+639,67.57358347240951,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+135,67.5528297740479,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+113,67.48233350188688,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+773,67.39501871873847,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+205,67.25739162145658,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+30,66.94142787824366,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+704,66.89922452065262,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+706,66.84133819532751,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+567,66.81165394554007,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+269,66.614114188743,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+241,66.60030284304638,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+327,66.49336603070134,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+854,66.44465935909729,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+563,66.42227509388043,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+249,66.36700309636721,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+104,66.03118316316687,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+305,65.98962943169522,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+76,65.97158513742092,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+847,65.93664608179097,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+53,65.88924996631262,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+661,65.68838816142129,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+256,65.55085724013924,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+612,65.21384055492538,🟠 HIGH RISK,lOComment,Split into smaller functions
+809,65.15667662234216,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+189,65.04387555780423,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+516,65.03450664014883,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+272,64.51218386675414,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+350,64.41003232885326,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+339,64.40424143497637,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+264,64.33850086475272,🟠 HIGH RISK,lOCode,Split into smaller functions
+490,64.1417980853728,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+719,64.10238658950786,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+774,64.09432274802974,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+900,64.09049477142622,🟠 HIGH RISK,lOComment,Split into smaller functions
+495,63.866119074897135,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+463,63.73642242749648,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+718,63.70692053106634,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+638,63.51468082191831,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+212,63.48205253846354,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+928,63.313384046707725,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+506,62.999052653771706,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+1046,62.95716304160046,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+852,62.867178910729926,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+1110,62.7164517085207,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+118,62.49074708188714,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+921,62.450826083939745,🟠 HIGH RISK,lOComment,Split into smaller functions
+356,62.40289049152028,🟠 HIGH RISK,l,Review and refactor high-risk metrics
+910,62.379998773805504,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+611,62.26155448902334,🟠 HIGH RISK,l,Review and refactor high-risk metrics
+40,62.100720422742995,🟠 HIGH RISK,l,Review and refactor high-risk metrics
+525,62.013555382294385,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+121,61.985089874446366,🟠 HIGH RISK,l,Review and refactor high-risk metrics
+362,61.9449040951443,🟠 HIGH RISK,v(g),Reduce cyclomatic complexity
+601,61.79162401772288,🟠 HIGH RISK,lOComment,Split into smaller functions
+965,61.72073571402578,🟠 HIGH RISK,l,Review and refactor high-risk metrics
+342,61.719564904525136,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+548,61.637527231845056,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+127,61.62004290521177,🟠 HIGH RISK,lOComment,Split into smaller functions
+10,61.61626277799922,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+580,61.30560933819036,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+514,61.268167170003686,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+808,61.222283793646085,🟠 HIGH RISK,lOBlank,Review and refactor high-risk metrics
+1092,61.098227983112395,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+1117,61.01714833371934,🟠 HIGH RISK,d,Review and refactor high-risk metrics
+243,61.014477884949336,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+680,60.92524257844361,🟠 HIGH RISK,iv(g),Reduce cyclomatic complexity
+793,60.86899574651762,🟠 HIGH RISK,v(g),Reduce cyclomatic complexity
+617,60.85790155886277,🟠 HIGH RISK,uniq_Opnd,Review and refactor high-risk metrics
+1124,60.77393292217632,🟠 HIGH RISK,lOCode,Split into smaller functions
+3,60.6577330403836,🟠 HIGH RISK,ev(g),Reduce cyclomatic complexity
+811,60.51720037646008,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+1120,60.46845191636044,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+1065,60.45471664154501,🟠 HIGH RISK,l,Review and refactor high-risk metrics
+435,60.37200765244053,🟠 HIGH RISK,i,Review and refactor high-risk metrics
+52,60.243790697530386,🟠 HIGH RISK,uniq_Op,Review and refactor high-risk metrics
+396,59.98173270510511,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+177,59.94290161671607,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+50,59.83262726571675,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+496,59.74571364541559,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+87,59.71974150232946,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+9,59.664229555233184,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+488,59.582365056890595,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+647,59.540870204918676,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+7,59.46676818447032,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+603,59.3314703433658,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+1096,59.287977561140515,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+139,59.27912557082815,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+477,59.26061738545142,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+192,59.15282728616992,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+951,59.13452680688545,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+124,59.09837262319119,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+21,59.05689269498774,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+641,58.927712883005114,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+481,58.78729049928253,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+5,58.782239485675156,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1053,58.735483726160595,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+1105,58.57800662535738,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+763,58.53479613501007,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+427,58.27810241865159,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+897,58.23820930346416,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+28,58.22068500944354,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+691,58.192593073727004,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+787,58.126542178154864,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+530,58.049808362943054,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+358,57.997552897094295,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+106,57.829692365847954,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+725,57.763401493733355,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+768,57.66016984075431,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+89,57.6530576524342,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1148,57.60597326456222,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1068,57.49480644222109,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+497,57.471088271671675,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+633,57.412505548805456,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+544,57.409532954290285,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+892,57.39352107858768,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+81,57.215140460910106,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+899,57.139599745250344,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+239,57.120101075609355,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+884,57.11214424545851,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+500,57.07211644085762,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+25,56.98594281032665,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+41,56.93219913982038,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+147,56.93115913002303,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+373,56.91593251863372,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+830,56.880270352302,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+898,56.79805332766619,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+6,56.63298934687456,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+8,56.6211414943749,🟡 MEDIUM RISK,total_Op,Review and refactor high-risk metrics
+326,56.537188420883986,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+88,56.50507855430761,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+130,56.43534058942191,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+862,56.37259645095304,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+232,56.30966333831885,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+14,56.25921872326215,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+208,56.24434026955297,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+690,56.1987538779387,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+1132,56.13151217872252,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+43,56.01364741728819,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+1035,56.01122617855133,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1003,56.000483858494775,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+979,55.92197124037608,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+114,55.891184467440745,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1121,55.82853258483035,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+26,55.818263180044994,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+475,55.69069910603308,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1060,55.681465989528434,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+1082,55.65339202055324,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+478,55.647791308294444,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+505,55.58779857811882,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+261,55.492080363236376,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+762,55.4725819876715,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+531,55.448499046190406,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+902,55.41475886324774,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+84,55.41062400144233,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+434,55.38518700275813,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+874,55.36746785210621,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1114,55.26403880203229,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+207,55.20965183936567,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+54,55.15833282934628,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1165,55.15527867779062,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+471,55.13811204161283,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+299,55.127117574883655,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+120,55.05188397228766,🟡 MEDIUM RISK,loc,Split into smaller functions
+642,54.921608172732626,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+688,54.903016353542654,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1009,54.85697608362512,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+1112,54.85527930013774,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+501,54.79979559886734,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+182,54.75482546514555,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+155,54.69707001959115,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+1163,54.674477358412474,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+976,54.64814383676059,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1059,54.4793143320941,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+134,54.3077446125608,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+988,54.3043937871316,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+473,54.24274833217741,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+242,54.119264245182684,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+235,54.10536317426131,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+848,53.888067332793696,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+904,53.83228354701758,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+284,53.81703627938524,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+290,53.81145942775618,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1063,53.81145942775618,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+760,53.806990228620435,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+962,53.782717154277016,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+807,53.77334075627327,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+629,53.76067549971444,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1048,53.754269656887196,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+160,53.754269656887196,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+974,53.70805755342527,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+545,53.63836849452102,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+743,53.6170106345541,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+455,53.56354627745124,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+164,53.47045413928515,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+225,53.431379856929304,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+634,53.41277247543354,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+138,53.363213929591055,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+296,53.272111282996704,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+436,53.26451569006421,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+712,53.21867841351748,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+22,53.21342434663025,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+126,53.20598386752845,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+42,53.107085945606805,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+480,53.05752871224549,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+968,53.04183546723868,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+489,52.99669719032439,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+13,52.974512696282325,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+285,52.92293133159108,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+869,52.800847244774815,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+238,52.772714746705695,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+618,52.75814930173086,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+233,52.62867678815895,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+824,52.59684270337889,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+498,52.58391147646636,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+125,52.57794479186728,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+1047,52.56850698286023,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+190,52.48101739661237,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+58,52.414671127507084,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+468,52.41176532485178,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+273,52.406535640965316,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+74,52.34583757227232,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+767,52.33757145863487,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1057,52.29964976631551,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+465,52.23041495495826,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+831,52.19434453496427,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+528,52.1748396076299,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+479,52.16805884247658,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1179,52.15802208971624,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+469,52.15721766981053,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+876,52.14973086646834,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+1193,52.07526488752635,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1151,51.99464480246741,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+879,51.98076265973168,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+856,51.97509570661833,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+343,51.964139715784476,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+253,51.92130407715604,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+328,51.856375367528365,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+840,51.84478864674197,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+1054,51.79182626575791,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+474,51.688005744058664,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+515,51.68767137253872,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1079,51.61515032776839,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+282,51.58751983492977,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+162,51.494331587558776,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+759,51.48691429784154,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+348,51.38563221430357,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1169,51.34213122567317,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1172,51.280602064323176,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+476,51.26008117183917,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+61,51.22869891144878,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+330,51.184300244531364,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1074,51.167787534087374,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+727,51.14468206931083,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+549,51.11409586881928,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+334,51.09602796270851,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+746,51.0638082946832,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+686,50.99685039470347,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1192,50.9755704876008,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+220,50.957676071536575,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+470,50.88705362885322,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+777,50.87566952278492,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+128,50.818167014193975,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1147,50.810540896394926,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+472,50.79037200872957,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+985,50.77830389598097,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+564,50.77255626649625,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+91,50.7329339557193,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1209,50.71392384317954,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+75,50.519667486660325,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+655,50.51700246018347,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+946,50.400303632600504,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+366,50.2755284941078,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+803,50.21003191587818,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1162,50.20640355739086,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+492,50.194233773864305,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+201,50.15114586728181,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+483,50.11570626438905,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+349,50.110447430873165,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+694,50.03284122252497,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1201,50.00742335429999,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+172,50.00537507447912,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+466,49.99009145547759,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+37,49.99009145547759,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+615,49.972768284909094,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+107,49.94932601002839,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+625,49.94771468238073,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+338,49.94004944620333,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+45,49.87832442871765,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+502,49.87594053655906,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+109,49.81632937325262,🟡 MEDIUM RISK,loc,Split into smaller functions
+337,49.76735515034431,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+47,49.760765179214424,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+341,49.70297740779584,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+797,49.680316027472884,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+433,49.564814515291694,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+841,49.53297616310369,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+360,49.36787242261118,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+1091,49.28436667180721,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+843,49.25201682654807,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+799,49.19671571262395,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+458,49.17310287696136,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1107,49.16551154832297,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1008,49.15653979845385,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+364,49.10924772486054,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1177,49.09698138220391,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+346,49.08861756890332,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+174,49.052593895239625,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+223,48.99143153810158,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+527,48.89368711455474,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+905,48.842090252404155,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1167,48.82253924994085,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+518,48.80450577069607,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1088,48.79345159697316,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+195,48.769056389188606,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+724,48.74439782789952,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+437,48.72058653282883,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+656,48.6399477242814,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+230,48.612559929419206,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+99,48.52415553407489,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+684,48.52018669239346,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+842,48.446483363537766,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+406,48.41123537432268,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+972,48.36508213331604,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+978,48.357483333012006,🟡 MEDIUM RISK,branchCount,Simplify branching logic
+512,48.290527542723645,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+258,48.25796016564213,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+464,48.23725574700182,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+801,48.22742574477475,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+839,48.159259932757145,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+254,48.08406258487192,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+467,48.037834762746094,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+640,48.00887429891649,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+513,47.996370409078956,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+424,47.98353130635565,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+628,47.96014162558535,🟡 MEDIUM RISK,loc,Split into smaller functions
+794,47.9164440316058,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1007,47.91365969559392,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+287,47.90309149845727,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+855,47.89211222564188,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1208,47.86589601968419,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+551,47.85169726089747,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1150,47.79428729104086,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+687,47.60125319257263,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+178,47.54741000596217,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+955,47.53633987734183,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+945,47.50977978490453,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+1081,47.368880686639855,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+229,47.34774349212105,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+635,47.32519246372635,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+543,47.320113729152744,🟡 MEDIUM RISK,loc,Split into smaller functions
+614,47.28082486657963,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+133,47.22544568728597,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+321,47.15992357193928,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+511,47.109039512993995,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1195,47.08243445595504,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+540,47.05700617596466,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+829,47.055431435042024,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+46,47.0434345131808,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+696,46.99900475430183,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+959,46.94091425646604,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+110,46.91710821024492,🟡 MEDIUM RISK,loc,Split into smaller functions
+609,46.91021803460078,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+16,46.90942157965197,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+857,46.87009559686245,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+710,46.83610959687547,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+394,46.78049833344242,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+438,46.765846704514956,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+216,46.68285393273527,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+791,46.659490385138895,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+324,46.642129982301526,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+913,46.638370617468425,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+200,46.54565759889835,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+958,46.533433889349055,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+971,46.44626267286398,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+524,46.39366467074319,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+956,46.392474441083586,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1115,46.303674625959786,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+191,46.2845028897852,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+703,46.2247069168899,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1204,46.22172952903848,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+432,46.147629504667414,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+365,46.1261540283913,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+935,46.115575031734465,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+108,46.1076528039686,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+526,45.99958662603141,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+713,45.89093918286473,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+250,45.88623369091226,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+659,45.8605059631179,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1196,45.85695950508078,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+227,45.8423165299602,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+936,45.767461664729375,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1013,45.61958331196186,🟡 MEDIUM RISK,loc,Split into smaller functions
+1188,45.5666676362214,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+711,45.548298314867154,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+292,45.507043337754574,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+952,45.466284015432365,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+180,45.44926805859028,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+19,45.330316197885814,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+953,45.295062250899036,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+18,45.28247783798088,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+129,45.249448766287806,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+457,45.22711399478281,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+486,45.089239049056594,🟡 MEDIUM RISK,total_Op,Review and refactor high-risk metrics
+992,45.06317560787797,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+648,45.04573406676484,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+1174,45.0447092103561,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+461,45.04093229512716,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+920,44.98082212842567,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+363,44.97722172046696,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+709,44.97621252423113,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+534,44.95394471325592,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+86,44.910243397077046,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+193,44.857488728880085,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+280,44.857388616694465,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+323,44.84425981847752,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+523,44.7089970987174,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+423,44.56004842405437,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+723,44.542808530275806,🟡 MEDIUM RISK,loc,Split into smaller functions
+1145,44.49711610771588,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+529,44.38348368203292,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+555,44.325900605512615,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1203,44.291990491440664,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+105,44.24150028310796,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+445,44.22350387718832,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+538,44.1373418432019,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+322,44.09693609034785,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+507,44.06977410713548,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+72,44.049686143814014,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+204,44.03477270555559,🟡 MEDIUM RISK,branchCount,Simplify branching logic
+351,43.95426357825609,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+417,43.93324440792926,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+993,43.93160690676463,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+444,43.83707033457186,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+833,43.83473204134305,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+818,43.818433881967,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+804,43.81665055783246,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+487,43.81068310284505,🟡 MEDIUM RISK,total_Op,Review and refactor high-risk metrics
+388,43.75353780100767,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+826,43.65678008712115,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+452,43.60791956797639,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+440,43.59313198263718,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+550,43.5708858888732,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1189,43.49771161282404,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+863,43.44510867715676,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+493,43.41857494764853,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+532,43.41334435112463,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+944,43.41256046245552,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+206,43.39523341714761,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+329,43.39282923772378,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+806,43.39144860520749,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+267,43.378587875595294,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1077,43.35683208526046,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+447,43.30542808941076,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+1136,43.300337091802064,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+94,43.27269989647358,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+418,43.24894893463879,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+1152,43.2438595122912,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+707,43.18897116832037,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1078,43.15824432829704,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+449,43.08219983112253,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+546,43.06205994433963,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+665,43.005351652659904,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+504,43.00093877192218,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+766,42.98249570008133,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+39,42.96313311501962,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+966,42.85121155593352,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1049,42.846481689569636,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+183,42.815184245728624,🟡 MEDIUM RISK,loc,Split into smaller functions
+519,42.772869520035975,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+411,42.74155064337107,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+340,42.686246076892154,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1066,42.67027932414807,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+790,42.622943568133195,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+325,42.60246852821112,🟡 MEDIUM RISK,total_Op,Review and refactor high-risk metrics
+778,42.428158062320676,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+539,42.425397241832755,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1200,42.404730827889594,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+533,42.40067536659662,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+569,42.26777437109506,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1144,42.263320648187666,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+167,42.26319978634425,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+926,42.22483291643312,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+780,42.20746672033138,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+849,42.19362623540271,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+720,42.16888714655836,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1210,42.14382351391275,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+4,42.11484771399038,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+333,42.11484771399038,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+783,42.11367017748635,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+517,42.06362122429274,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+535,42.02992265058031,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+781,42.02443402013955,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1182,42.023842023795396,🟡 MEDIUM RISK,loc,Split into smaller functions
+1206,41.97672285668561,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1198,41.84317870671974,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1166,41.80264945131862,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+57,41.78360029714463,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1051,41.780909420447486,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+872,41.77527168989405,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+161,41.725243417420174,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1076,41.724955251767746,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1202,41.700400197948866,🟡 MEDIUM RISK,total_Op,Review and refactor high-risk metrics
+779,41.688206061750925,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1142,41.67262581688386,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+347,41.651297629048514,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+681,41.62690893689453,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+785,41.61635987891511,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+123,41.61529874266724,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+786,41.57354211272081,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+894,41.55142951489157,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+816,41.4442512611862,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1181,41.41960317054853,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+482,41.36975269770056,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+721,41.32884946808405,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+975,41.3223213090894,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+218,41.31488814781372,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+446,41.31488814781372,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+1134,41.308897556407246,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+294,41.28325970477134,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+579,41.24194770069773,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+844,41.197896242703045,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+38,41.19149050793227,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+941,41.159511194532996,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+859,41.15434466183505,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+159,41.11250036931108,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+78,41.051407735826984,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+598,41.04304555084116,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+554,41.03319776936844,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+932,41.02549474904118,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+754,41.021289167663646,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+503,40.97554967384721,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+832,40.93474401948791,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+747,40.909872623267724,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+450,40.86274211285167,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+954,40.850820842717226,🟡 MEDIUM RISK,loc,Split into smaller functions
+499,40.84470490909296,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+663,40.84108272147721,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+408,40.759171080235824,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+332,40.745227174747065,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+562,40.71567359151464,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1153,40.67837553732006,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+652,40.6525584349802,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+556,40.629960954331295,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+942,40.62114260077775,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+359,40.56919260929651,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+819,40.56059525083496,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+730,40.47414400178138,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+395,40.46215943911817,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1180,40.414483294417316,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+255,40.39894149090726,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+933,40.38276554547731,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+541,40.37642072162068,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+963,40.346987806289555,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+412,40.30641972145591,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+969,40.301232666232146,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+416,40.249784355195764,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+560,40.23204501192846,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1199,40.17542059169884,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1106,39.994395692226334,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+315,39.92050025771828,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+85,39.855088786575486,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+552,39.84249778903994,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1026,39.818461587409736,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+345,39.7996986343642,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+367,39.74863002698689,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1087,39.72998832946343,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+56,39.70568817089643,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+460,39.69354190964054,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+62,39.64179010518919,🟡 MEDIUM RISK,loc,Split into smaller functions
+657,39.604561458754354,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+970,39.47799116753403,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+49,39.460614942838376,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+561,39.423069554496315,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+371,39.418552443904204,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+782,39.34032432258229,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+228,39.33062157707512,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+967,39.29937684035222,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+236,39.28598099239603,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+651,39.264749938385265,🟡 MEDIUM RISK,loc,Split into smaller functions
+331,39.2360779065729,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+893,39.207268038390595,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1131,39.19227076793196,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+1086,39.18083769689988,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+415,39.174184311228714,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1113,39.1260254861988,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1123,39.11040071654867,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+259,39.088677072821035,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+27,39.082379302177834,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+413,39.082379302177834,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1116,39.07124069491651,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+887,38.99480130366043,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1135,38.95722864387436,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+964,38.94895952267947,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1072,38.94053542173685,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+775,38.9365272140697,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+393,38.91391555771031,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+448,38.8167359936604,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+266,38.78697653186754,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+97,38.76531274037263,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+702,38.74370711509651,🟡 MEDIUM RISK,loc,Split into smaller functions
+591,38.64418986442359,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+916,38.54707316200188,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1084,38.544771809863306,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+581,38.52563046502378,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+202,38.45916567083197,🟡 MEDIUM RISK,loc,Split into smaller functions
+357,38.40472553545516,🟡 MEDIUM RISK,loc,Split into smaller functions
+715,38.40344138803232,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1137,38.35031443934464,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+789,38.34729714156374,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1099,38.33943135944599,🟡 MEDIUM RISK,loc,Split into smaller functions
+407,38.23042775278326,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1064,38.21501781123253,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+925,38.16627594146385,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+880,38.14356347184317,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+784,38.08796812967051,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1138,38.04039346238698,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+860,38.00941422123967,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+319,37.94481414564261,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+994,37.93557965170465,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+34,37.93140790614808,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1183,37.92629723238642,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1041,37.90379588105143,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+265,37.87915951863597,🟡 MEDIUM RISK,loc,Split into smaller functions
+1004,37.87111706849599,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1205,37.83009538352614,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+369,37.827343811178864,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+414,37.722776438367134,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+699,37.68811703267681,🟡 MEDIUM RISK,loc,Split into smaller functions
+185,37.56871765021043,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+822,37.55074346059111,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+151,37.42201368827131,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+387,37.40066587410118,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+788,37.381884515984524,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+1055,37.278675255224364,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1211,37.24026900904222,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1062,37.2248953714563,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1015,37.181436248912824,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+717,37.15609366340232,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1143,37.15262598286828,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+919,37.11767965123476,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+35,37.08927043407556,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+443,37.08927043407556,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+588,37.087902461024754,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1175,37.08761015369619,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+67,37.05067621406549,🟡 MEDIUM RISK,v(g),Reduce cyclomatic complexity
+1067,36.986139986820824,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+938,36.95672098320301,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+194,36.955621111859436,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1012,36.929389207655234,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+379,36.92553217272173,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+90,36.904670107373775,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+509,36.888113446339155,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+861,36.76950126208393,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1191,36.76612351369451,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+903,36.7658567409158,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+390,36.76479041795376,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+568,36.71013488564073,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+662,36.70477189971336,🟡 MEDIUM RISK,loc,Split into smaller functions
+613,36.62336004619141,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1070,36.6185927846397,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+621,36.5378041901384,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+697,36.52526981081868,🟡 MEDIUM RISK,loc,Split into smaller functions
+1023,36.42095899916274,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1207,36.38235545801366,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+275,36.36067035347408,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+846,36.28172125284957,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+251,36.23091510880586,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+547,36.14066302815966,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+836,36.11486843627727,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+776,36.03293129677658,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+589,35.93372789844151,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+885,35.90198170317122,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+828,35.8699452937107,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+1045,35.84566540874408,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1058,35.75894934497346,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+215,35.54843984942989,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+454,35.54843984942989,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+508,35.493500222599636,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+153,35.28173979880441,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+917,35.27771704319423,🟡 MEDIUM RISK,lOBlank,Review and refactor high-risk metrics
+646,35.2560470181745,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+864,35.23989320840244,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+987,35.23055237531767,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+837,35.13713666746347,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+644,35.10143684938721,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+660,35.089910599365275,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+689,35.06773093401952,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+79,35.06283542163133,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+671,35.050899116566264,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+318,35.0416256801863,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+886,34.91924733233053,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1186,34.905815749577016,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+306,34.885364663996576,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1002,34.87947643491724,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1032,34.86274160637445,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+453,34.834112683322886,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+441,34.831925862845196,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1094,34.809068133270095,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+15,34.79139115515701,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1104,34.753109141048235,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+44,34.729605427469174,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1102,34.70095696618408,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+923,34.662896850204056,🟡 MEDIUM RISK,lOCode,Split into smaller functions
+914,34.63744599367527,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+361,34.574154674291734,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+70,34.53102334156324,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+69,34.496465495333254,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+654,34.489915490477834,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+587,34.414474428630164,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+771,34.381984912997716,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1109,34.381787464645114,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+636,34.37608657495345,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+354,34.283705020753565,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+664,34.26710452669972,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+653,34.23743724804969,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+812,34.22222716643627,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1036,34.20598616200871,🟡 MEDIUM RISK,loc,Split into smaller functions
+674,34.184763414907515,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1161,34.14150204476548,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+881,34.107236346400796,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1159,34.048406680435804,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+667,34.00966015404208,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+176,33.99311229469208,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1097,33.98185136541147,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+352,33.97045064129033,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+620,33.88149231282892,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1111,33.86370012343819,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+821,33.81181914603922,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+1119,33.760595941706605,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1140,33.70916368913427,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1139,33.67004346621847,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1071,33.63288667521402,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+197,33.57889662990253,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+658,33.57197685489158,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+896,33.5570379498897,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1083,33.53025278430151,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+984,33.514679081886094,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+542,33.478870356284226,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+649,33.43411692777006,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+1042,33.26264836783512,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1019,33.157295690527164,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1011,32.93556012736399,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+888,32.90996790127701,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1033,32.88996021329743,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+838,32.855395387979556,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+48,32.85139173000699,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1093,32.806745965604215,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+722,32.792431811679215,🟡 MEDIUM RISK,ev(g),Reduce cyclomatic complexity
+600,32.78377001494927,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+150,32.76891630845839,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+977,32.753963148388,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+152,32.753963148388,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+64,32.727295513788434,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+870,32.695187844180765,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+187,32.69026850623316,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+355,32.67003911452894,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1141,32.629959153104906,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+943,32.62202761349434,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+1018,32.57361704982158,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+800,32.57175509301967,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1006,32.55960298920218,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+1156,32.47485507846211,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+491,32.47037557059473,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+553,32.46297987677141,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+700,32.43723011863573,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+163,32.267693857890805,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+858,32.21567995454542,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+252,32.21428493862285,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+1100,32.20467200409687,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1101,32.171948527220586,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+991,32.155323071994346,🟡 MEDIUM RISK,d,Review and refactor high-risk metrics
+260,32.109944458806204,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+1160,32.10428815392443,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+421,31.918869487273245,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+392,31.881087776745066,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+1185,31.862047966529172,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+66,31.83186844304539,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+795,31.787669715380325,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+802,31.74842185791722,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+989,31.715833730122796,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+391,31.637466670775687,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+429,31.612764987483104,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+873,31.585251003901853,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+922,31.584429855961822,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+571,31.57992625047335,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+171,31.54971842940986,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+459,31.534734560022336,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1158,31.5124140160358,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+670,31.479457214261352,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+1098,31.385782582377814,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+210,31.366440858705698,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+980,31.348678948827697,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1164,31.32180251904842,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+701,31.32013696682698,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1017,31.286653858903072,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+668,31.264565312805427,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+823,31.24300838965453,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+377,31.223970024222453,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1043,31.220961971385954,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+875,31.17185632203661,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+397,31.023841690707876,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1103,31.006191618983525,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+827,30.92361820677489,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+557,30.91475147179217,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+484,30.90170737709738,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1039,30.880892376471508,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+825,30.8705982411985,🟡 MEDIUM RISK,iv(g),Reduce cyclomatic complexity
+918,30.66698816960895,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+981,30.666236544454616,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1001,30.653189320004486,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+950,30.6140777902502,🟡 MEDIUM RISK,locCodeAndComment,Split into smaller functions
+198,30.555736536199536,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1028,30.536766699712313,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1176,30.458183360731734,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1029,30.43735405980558,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+565,30.416981182801095,🟡 MEDIUM RISK,uniq_Opnd,Review and refactor high-risk metrics
+1178,30.409472470269943,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+604,30.403796030400066,🟡 MEDIUM RISK,lOComment,Split into smaller functions
+410,30.37119305348947,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+398,30.312065073887144,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+1194,30.283782767177986,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+399,30.263486171177284,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+698,30.234058458177593,🟡 MEDIUM RISK,uniq_Op,Review and refactor high-risk metrics
+520,30.131694621263893,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+80,30.098964674934226,🟡 MEDIUM RISK,i,Review and refactor high-risk metrics
+1089,30.02662709344093,🟡 MEDIUM RISK,l,Review and refactor high-risk metrics
+582,29.966271961964225,🟢 LOW RISK,i,Review and refactor high-risk metrics
+431,29.943441605827708,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1197,29.914832377800465,🟢 LOW RISK,total_Op,Review and refactor high-risk metrics
+1157,29.86793377336171,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+316,29.822391246155032,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+576,29.821501564074186,🟢 LOW RISK,i,Review and refactor high-risk metrics
+1010,29.798734573957276,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+930,29.790162986027653,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+278,29.707605363931812,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+1021,29.683127239382667,🟢 LOW RISK,i,Review and refactor high-risk metrics
+820,29.639432961691586,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+675,29.605007713209595,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+583,29.53361033537898,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+742,29.531661585751916,🟢 LOW RISK,ev(g),Reduce cyclomatic complexity
+247,29.527260426739232,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+140,29.446523177338946,🟢 LOW RISK,i,Review and refactor high-risk metrics
+244,29.400040932397992,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+850,29.390052994340333,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1022,29.38904886449994,🟢 LOW RISK,i,Review and refactor high-risk metrics
+203,29.375719483083206,🟢 LOW RISK,lOBlank,Review and refactor high-risk metrics
+196,29.374414705607304,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+626,29.352849013811273,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+596,29.255539212321064,🟢 LOW RISK,l,Review and refactor high-risk metrics
+558,29.157954974257745,🟢 LOW RISK,l,Review and refactor high-risk metrics
+990,29.119505565434032,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+566,29.109383714156422,🟢 LOW RISK,d,Review and refactor high-risk metrics
+572,29.004773980980204,🟢 LOW RISK,l,Review and refactor high-risk metrics
+68,28.9403140104832,🟢 LOW RISK,i,Review and refactor high-risk metrics
+814,28.91476987625155,🟢 LOW RISK,i,Review and refactor high-risk metrics
+1025,28.89269239698829,🟢 LOW RISK,loc,Split into smaller functions
+145,28.820281447064485,🟢 LOW RISK,i,Review and refactor high-risk metrics
+986,28.773106201868217,🟢 LOW RISK,i,Review and refactor high-risk metrics
+1000,28.746484014163343,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+173,28.673876410414227,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1050,28.66621527221736,🟢 LOW RISK,uniq_Opnd,Review and refactor high-risk metrics
+368,28.631629981596895,🟢 LOW RISK,i,Review and refactor high-risk metrics
+248,28.551360949960614,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+890,28.478099046874462,🟢 LOW RISK,i,Review and refactor high-risk metrics
+960,28.14993732754158,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1040,28.11747707571447,🟢 LOW RISK,l,Review and refactor high-risk metrics
+559,28.08404106551346,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1027,28.064165978734252,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1056,27.944735555221794,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1005,27.852063376581654,🟢 LOW RISK,l,Review and refactor high-risk metrics
+184,27.819498721444948,🟢 LOW RISK,l,Review and refactor high-risk metrics
+631,27.786099593792347,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+669,27.779477109528507,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+578,27.70052841869242,🟢 LOW RISK,l,Review and refactor high-risk metrics
+630,27.634038623659468,🟢 LOW RISK,i,Review and refactor high-risk metrics
+146,27.634038623659468,🟢 LOW RISK,i,Review and refactor high-risk metrics
+409,27.516483954666608,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1044,27.515213110872367,🟢 LOW RISK,l,Review and refactor high-risk metrics
+246,27.37584143867297,🟢 LOW RISK,uniq_Opnd,Review and refactor high-risk metrics
+288,27.358613194438526,🟢 LOW RISK,i,Review and refactor high-risk metrics
+586,27.358613194438526,🟢 LOW RISK,i,Review and refactor high-risk metrics
+1024,27.277249045334163,🟢 LOW RISK,uniq_Opnd,Review and refactor high-risk metrics
+149,27.18471367002978,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1155,27.099236360784186,🟢 LOW RISK,i,Review and refactor high-risk metrics
+865,26.986572847254838,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1034,26.985627830717245,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1118,26.958824314061385,🟢 LOW RISK,i,Review and refactor high-risk metrics
+889,26.9170773201643,🟢 LOW RISK,i,Review and refactor high-risk metrics
+957,26.882902831032162,🟢 LOW RISK,l,Review and refactor high-risk metrics
+673,26.867661872097447,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1031,26.83214278489185,🟢 LOW RISK,l,Review and refactor high-risk metrics
+597,26.80446324133397,🟢 LOW RISK,l,Review and refactor high-risk metrics
+982,26.468213197947364,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+77,26.468213197947364,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+845,26.4284217500144,🟢 LOW RISK,i,Review and refactor high-risk metrics
+752,26.42360960008484,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+584,26.417675603799314,🟢 LOW RISK,l,Review and refactor high-risk metrics
+729,26.372975987725745,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1038,26.283722507780112,🟢 LOW RISK,l,Review and refactor high-risk metrics
+320,25.98736715441708,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1108,25.978952716756474,🟢 LOW RISK,l,Review and refactor high-risk metrics
+143,25.934733792714532,🟢 LOW RISK,l,Review and refactor high-risk metrics
+419,25.934733792714532,🟢 LOW RISK,l,Review and refactor high-risk metrics
+65,25.86148717797722,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+71,25.67023719538663,🟢 LOW RISK,l,Review and refactor high-risk metrics
+610,25.67023719538663,🟢 LOW RISK,l,Review and refactor high-risk metrics
+425,25.657850187674235,🟢 LOW RISK,l,Review and refactor high-risk metrics
+866,25.609269801215977,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1171,25.565462789249004,🟢 LOW RISK,l,Review and refactor high-risk metrics
+226,25.554344750357416,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1190,25.483240772949156,🟢 LOW RISK,i,Review and refactor high-risk metrics
+602,25.47674710394341,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+383,25.46417554916532,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+996,25.43957562136958,🟢 LOW RISK,i,Review and refactor high-risk metrics
+676,25.433089281512505,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+372,25.420531921258675,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+983,25.401157073735654,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1168,25.377955686058556,🟢 LOW RISK,i,Review and refactor high-risk metrics
+735,25.37693762766103,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+426,25.35067246576739,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+389,25.345921643798924,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+632,25.30241189154368,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+158,25.30230688682545,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+317,25.30230688682545,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+737,25.24645106690233,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+995,25.17690612321944,🟢 LOW RISK,i,Review and refactor high-risk metrics
+1173,25.17207462598946,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+756,25.116409632031477,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+370,25.10327402939008,🟢 LOW RISK,l,Review and refactor high-risk metrics
+624,25.073962760257324,🟢 LOW RISK,i,Review and refactor high-risk metrics
+997,24.949105930151635,🟢 LOW RISK,l,Review and refactor high-risk metrics
+769,24.943714862987623,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+998,24.905946200497166,🟢 LOW RISK,l,Review and refactor high-risk metrics
+599,24.8614372987676,🟢 LOW RISK,l,Review and refactor high-risk metrics
+677,24.857665345345357,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+420,24.81848274002886,🟢 LOW RISK,l,Review and refactor high-risk metrics
+906,24.7755779253089,🟢 LOW RISK,l,Review and refactor high-risk metrics
+637,24.732722881608797,🟢 LOW RISK,l,Review and refactor high-risk metrics
+882,24.604456641754698,🟢 LOW RISK,l,Review and refactor high-risk metrics
+708,24.60425051748329,🟢 LOW RISK,l,Review and refactor high-risk metrics
+98,24.561595062300846,🟢 LOW RISK,l,Review and refactor high-risk metrics
+462,24.561595062300846,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1020,24.487090605061205,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+537,24.47945626147754,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1184,24.476433880800556,🟢 LOW RISK,l,Review and refactor high-risk metrics
+765,24.472906694698526,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+883,24.44437059880551,🟢 LOW RISK,branchCount,Simplify branching logic
+764,24.387953606864226,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+744,24.345552053213073,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+736,24.176446323881404,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+738,24.05014317423881,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+940,24.010364793951968,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+745,23.924291665163608,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+761,23.88244162486001,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+23,23.768004645004666,🟢 LOW RISK,ev(g),Reduce cyclomatic complexity
+234,23.757193175528112,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+404,23.66319329553927,🟢 LOW RISK,l,Review and refactor high-risk metrics
+422,23.621658170690562,🟢 LOW RISK,l,Review and refactor high-risk metrics
+82,23.590899866993194,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+428,23.538739093797602,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1014,23.538639101874374,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1085,23.46209584725273,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+386,23.42017205533612,🟢 LOW RISK,l,Review and refactor high-risk metrics
+772,23.41455704519176,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+405,23.373307114812814,🟢 LOW RISK,l,Review and refactor high-risk metrics
+83,23.373307114812814,🟢 LOW RISK,l,Review and refactor high-risk metrics
+999,23.34324840841788,🟢 LOW RISK,l,Review and refactor high-risk metrics
+385,23.337744143413403,🟢 LOW RISK,l,Review and refactor high-risk metrics
+378,23.296506655886954,🟢 LOW RISK,l,Review and refactor high-risk metrics
+616,23.249814046401752,🟢 LOW RISK,l,Review and refactor high-risk metrics
+592,23.219138983831826,🟢 LOW RISK,lOBlank,Review and refactor high-risk metrics
+376,23.21438204799227,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1149,23.208783908910828,🟢 LOW RISK,l,Review and refactor high-risk metrics
+605,23.091475623139125,🟢 LOW RISK,l,Review and refactor high-risk metrics
+705,22.85597230752881,🟢 LOW RISK,l,Review and refactor high-risk metrics
+924,22.666277621526895,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+755,22.370856109925572,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+757,22.291046297809263,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+381,22.281809088803644,🟢 LOW RISK,l,Review and refactor high-risk metrics
+678,22.251217610451945,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+948,22.21961543780222,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+739,22.21143974652803,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+570,22.081860043750485,🟢 LOW RISK,v(g),Reduce cyclomatic complexity
+741,21.973840275213135,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+682,21.948311653376294,🟢 LOW RISK,ev(g),Reduce cyclomatic complexity
+1129,21.806039417909375,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+645,21.516060870263917,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1146,21.29298059666501,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+796,21.278480042534824,🟢 LOW RISK,l,Review and refactor high-risk metrics
+270,21.201503011137095,🟢 LOW RISK,l,Review and refactor high-risk metrics
+695,21.201503011137095,🟢 LOW RISK,l,Review and refactor high-risk metrics
+175,21.193854521904935,🟢 LOW RISK,l,Review and refactor high-risk metrics
+309,21.162998206109055,🟢 LOW RISK,l,Review and refactor high-risk metrics
+521,21.162998206109055,🟢 LOW RISK,l,Review and refactor high-risk metrics
+692,21.086327038820002,🟢 LOW RISK,l,Review and refactor high-risk metrics
+813,21.073093728248228,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+1126,20.902577833481185,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+798,20.813995176826534,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+595,20.780378612064933,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+577,20.738815192434476,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1128,20.314767793522083,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+142,20.242989369755602,🟢 LOW RISK,l,Review and refactor high-risk metrics
+672,20.242989369755602,🟢 LOW RISK,l,Review and refactor high-risk metrics
+384,20.168798590153575,🟢 LOW RISK,l,Review and refactor high-risk metrics
+939,20.166453491596172,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+805,20.094722005702508,🟢 LOW RISK,l,Review and refactor high-risk metrics
+751,20.020849259446116,🟢 LOW RISK,l,Review and refactor high-risk metrics
+622,19.730006588461386,🟢 LOW RISK,t,Review and refactor high-risk metrics
+683,19.39143317482637,🟢 LOW RISK,ev(g),Reduce cyclomatic complexity
+758,19.374389740943815,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+1127,19.33029233458116,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+575,19.25090225903848,🟢 LOW RISK,i,Review and refactor high-risk metrics
+740,19.124053130091507,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+574,18.842298218803347,🟢 LOW RISK,uniq_Op,Review and refactor high-risk metrics
+749,18.504630235434732,🟢 LOW RISK,l,Review and refactor high-risk metrics
+451,18.042757993468626,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+929,17.63074917702193,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1125,17.36602183678447,🟢 LOW RISK,t,Review and refactor high-risk metrics
+934,17.238980254235315,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1052,16.78170153609819,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+380,16.44799967711018,🟢 LOW RISK,l,Review and refactor high-risk metrics
+679,15.68662593008942,🟢 LOW RISK,l,Review and refactor high-risk metrics
+374,15.598404025141596,🟢 LOW RISK,l,Review and refactor high-risk metrics
+627,15.568137784796102,🟢 LOW RISK,l,Review and refactor high-risk metrics
+375,15.537919459984796,🟢 LOW RISK,l,Review and refactor high-risk metrics
+607,15.504828129963123,🟢 LOW RISK,lOComment,Split into smaller functions
+817,15.136551061763532,🟢 LOW RISK,iv(g),Reduce cyclomatic complexity
+522,14.65082175428854,🟢 LOW RISK,l,Review and refactor high-risk metrics
+748,13.93950438535818,🟢 LOW RISK,l,Review and refactor high-risk metrics
+868,13.93943773672999,🟢 LOW RISK,l,Review and refactor high-risk metrics
+606,13.911859879121542,🟢 LOW RISK,l,Review and refactor high-risk metrics
+1090,13.884327779386771,🟢 LOW RISK,l,Review and refactor high-risk metrics
+593,13.519854870522984,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+931,13.155318774896058,🟢 LOW RISK,l,Review and refactor high-risk metrics
+750,13.10283686911096,🟢 LOW RISK,l,Review and refactor high-risk metrics
+867,13.076599503860706,🟢 LOW RISK,l,Review and refactor high-risk metrics
+770,13.012870409823618,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+908,12.9300256665037,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+594,12.828688210931155,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+666,11.15099402451348,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1130,11.014846834535641,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+650,9.069748824115651,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+947,8.704759542522131,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+623,8.554518050756403,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+1,8.346885176916786,🟢 LOW RISK,b,Review and refactor high-risk metrics
+590,5.059503980400047,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+0,3.983386715741657,🟢 LOW RISK,b,Review and refactor high-risk metrics
+792,1.3429664629369849,🟢 LOW RISK,locCodeAndComment,Split into smaller functions
+915,0.2406638730725607,🟢 LOW RISK,locCodeAndComment,Split into smaller functions

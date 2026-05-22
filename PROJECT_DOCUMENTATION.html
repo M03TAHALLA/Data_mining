@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Defect Prediction System - Complete Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0e27;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #1a1f3a;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        nav {
+            background: #111827;
+            padding: 20px 40px;
+            border-bottom: 1px solid #374151;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            overflow-x: auto;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #a78bfa;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            font-size: 0.95em;
+        }
+        
+        nav a:hover {
+            background: #374151;
+            color: #c4b5fd;
+        }
+        
+        main {
+            padding: 40px;
+        }
+        
+        section {
+            margin-bottom: 50px;
+            scroll-margin-top: 80px;
+        }
+        
+        section h2 {
+            color: #c4b5fd;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        section h3 {
+            color: #a78bfa;
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .goal-box {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+            border: 1px solid #7c3aed;
+        }
+        
+        .flow-diagram {
+            background: #111827;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #6366f1;
+            border: 1px solid #374151;
+            border-left: 4px solid #6366f1;
+        }
+        
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+            font-size: 1.05em;
+        }
+        
+        .step-number {
+            background: #6366f1;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+            font-size: 0.9em;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        
+        .tech-card {
+            background: #111827;
+            border: 1px solid #374151;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-card:hover {
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+            transform: translateY(-4px);
+            border-color: #6366f1;
+        }
+        
+        .tech-card h4 {
+            color: #c4b5fd;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        
+        .tech-card p {
+            color: #9ca3af;
+            font-size: 0.95em;
+        }
+        
+        .architecture-box {
+            background: #111827;
+            border: 1px solid #374151;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .folder-structure {
+            background: #0f172a;
+            color: #10b981;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid #374151;
+            line-height: 1.5;
+        }
+        
+        .code-block {
+            background: #0f172a;
+            color: #10b981;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin: 20px 0;
+            border-left: 4px solid #6366f1;
+            border: 1px solid #374151;
+            border-left: 4px solid #6366f1;
+            line-height: 1.5;
+        }
+        
+        .model-comparison {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #374151;
+        }
+        
+        .model-comparison thead {
+            background: #6366f1;
+            color: white;
+        }
+        
+        .model-comparison th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .model-comparison td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #374151;
+            color: #e0e0e0;
+        }
+        
+        .model-comparison tbody tr:hover {
+            background: #1f2937;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #d1d5db;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .highlight {
+            background: rgba(234, 179, 8, 0.1);
+            padding: 15px;
+            border-left: 4px solid #eab308;
+            border-radius: 8px;
+            margin: 15px 0;
+            color: #fde047;
+            border: 1px solid #374151;
+            border-left: 4px solid #eab308;
+        }
+        
+        .success {
+            background: rgba(34, 197, 94, 0.1);
+            padding: 15px;
+            border-left: 4px solid #22c55e;
+            border-radius: 8px;
+            margin: 15px 0;
+            color: #86efac;
+            border: 1px solid #374151;
+            border-left: 4px solid #22c55e;
+        }
+        
+        .info-box {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 15px;
+            border-left: 4px solid #3b82f6;
+            border-radius: 8px;
+            margin: 15px 0;
+            color: #93c5fd;
+            border: 1px solid #374151;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .metric-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 16px;
+            margin: 20px 0;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #7c3aed;
+        }
+        
+        .metric-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .metric-card .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #111827;
+            padding: 30px 40px;
+            text-align: center;
+            color: #9ca3af;
+            border-top: 1px solid #374151;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #6366f1;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+        }
+        
+        .btn:hover {
+            background: #8b5cf6;
+            box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+        }
+        
+        .pipeline-diagram {
+            background: #111827;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 1px solid #374151;
+        }
+        
+        .pipeline-box {
+            display: inline-block;
+            background: #1f2937;
+            border: 1px solid #6366f1;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #c4b5fd;
+            transition: all 0.2s ease;
+        }
+        
+        .pipeline-box:hover {
+            background: #6366f1;
+            color: white;
+        }
+        
+        .arrow {
+            display: inline-block;
+            color: #6366f1;
+            font-size: 1.5em;
+            margin: 0 10px;
+        }
+        
+        p {
+            color: #d1d5db;
+            margin-bottom: 15px;
+        }
+        
+        strong {
+            color: #f3f4f6;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            nav {
+                flex-direction: row;
+                overflow-x: auto;
+            }
+            
+            nav a {
+                display: inline-block;
+            }
+            
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            main {
+                padding: 20px;
+            }
+            
+            .metric-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .highlight-code {
+            background: #0f172a;
+            border: 1px solid #374151;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            color: #10b981;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #6366f1;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b5cf6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Software Defect Prediction System</h1>
+            <p>A Complete End-to-End ML Pipeline for Predicting Code Defects</p>
+        </header>
+        
+        <nav>
+            <a href="#goal">Project Goal</a>
+            <a href="#overview">System Overview</a>
+            <a href="#pipeline">Pipeline Workflow</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#components">Components</a>
+            <a href="#models">ML Models</a>
+            <a href="#features">Key Features</a>
+            <a href="#usage">How to Run</a>
+            <a href="#results">Expected Results</a>
+        </nav>
+        
+        <main>
+            <!-- GOAL SECTION -->
+            <section id="goal">
+                <h2>🎯 Project Goal</h2>
+                
+                <div class="goal-box">
+                    <strong>PRIMARY OBJECTIVE:</strong><br><br>
+                    Build a production-ready machine learning system that predicts which software modules are likely to have defects, 
+                    enabling developers and QA teams to prioritize testing efforts and allocate resources more effectively.
+                </div>
+                
+                <h3>Why This Matters</h3>
+                <p>
+                    Software defects are expensive. The later a bug is discovered in the development cycle, the more it costs to fix.
+                    By predicting which modules are likely to have defects early, teams can:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Reduce Testing Costs:</strong> Focus QA efforts on high-risk modules</li>
+                    <li><strong>Improve Code Quality:</strong> Identify problem areas before production</li>
+                    <li><strong>Accelerate Development:</strong> Spend less time on low-risk modules</li>
+                    <li><strong>Make Data-Driven Decisions:</strong> Use ML predictions instead of gut feeling</li>
+                </ul>
+                
+                <h3>Business Problem</h3>
+                <p>
+                    Given a software module with metrics like:
+                </p>
+                <ul class="feature-list">
+                    <li>Lines of Code (LOC)</li>
+                    <li>Cyclomatic Complexity</li>
+                    <li>Halstead Metrics</li>
+                    <li>Code Structure Information</li>
+                </ul>
+                <p>
+                    <strong>Predict:</strong> Will this module have defects? If yes, what's the risk level?
+                </p>
+            </section>
+            
+            <!-- OVERVIEW SECTION -->
+            <section id="overview">
+                <h2>🔍 System Overview</h2>
+                
+                <h3>High-Level Architecture</h3>
+                <div class="info-box">
+                    <strong>Input:</strong> Raw NASA PROMISE KC1 dataset (software metrics for Java modules)<br>
+                    <strong>Process:</strong> Clean → Analyze → Train ML Models → Evaluate → Generate Predictions<br>
+                    <strong>Output:</strong> Risk scores, predictions, interactive dashboard, prioritized QA recommendations
+                </div>
+                
+                <h3>Key Deliverables</h3>
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <div class="label">Machine Learning Models</div>
+                        <div class="value">7</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Evaluation Metrics</div>
+                        <div class="value">6</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">EDA Visualizations</div>
+                        <div class="value">6+</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Dashboard Tabs</div>
+                        <div class="value">6</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- PIPELINE SECTION -->
+            <section id="pipeline">
+                <h2>⚙️ Pipeline Workflow</h2>
+                
+                <h3>Complete Data Science Pipeline</h3>
+                <div class="pipeline-diagram">
+                    <div class="pipeline-box">1. Data Loading</div>
+                    <div class="arrow">→</div>
+                    <div class="pipeline-box">2. Preprocessing</div>
+                    <div class="arrow">→</div>
+                    <div class="pipeline-box">3. EDA</div>
+                    <br><br>
+                    <div class="pipeline-box">4. Model Training</div>
+                    <div class="arrow">→</div>
+                    <div class="pipeline-box">5. Evaluation</div>
+                    <div class="arrow">→</div>
+                    <div class="pipeline-box">6. DSS</div>
+                    <br><br>
+                    <div class="pipeline-box">7. Dashboard</div>
+                </div>
+                
+                <h3>Step-by-Step Workflow</h3>
+                <div class="flow-diagram">
+                    <div class="flow-step">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>Data Loading:</strong> Download/Load NASA PROMISE KC1 dataset (ARFF format)
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Handle Missing Values:</strong> Fill numerical columns with median
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
+                        <div>
+                            <strong>Remove Duplicates:</strong> Drop exact duplicate rows
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">4</div>
+                        <div>
+                            <strong>Encode Target:</strong> Convert defects column (True/False → 1/0)
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">5</div>
+                        <div>
+                            <strong>Remove Low-Variance Features:</strong> Drop columns with zero variance
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">6</div>
+                        <div>
+                            <strong>Normalize Features:</strong> Apply StandardScaler for feature scaling
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">7</div>
+                        <div>
+                            <strong>Handle Class Imbalance:</strong> Apply SMOTE if minority class < 30%
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">8</div>
+                        <div>
+                            <strong>Train/Test Split:</strong> 80/20 stratified split
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">9</div>
+                        <div>
+                            <strong>EDA Analysis:</strong> Generate 6+ visualizations (histograms, heatmaps, boxplots, etc.)
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">10</div>
+                        <div>
+                            <strong>Train 7 ML Models:</strong> DT, RF, SVM, LR, NB, XGBoost, LightGBM
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">11</div>
+                        <div>
+                            <strong>Evaluate & Compare:</strong> Compute 6 metrics per model (Accuracy, Precision, Recall, F1, ROC-AUC, CM)
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">12</div>
+                        <div>
+                            <strong>Hyperparameter Tuning:</strong> GridSearchCV on best 2 models
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">13</div>
+                        <div>
+                            <strong>Cross-Validation:</strong> 5-Fold StratifiedKFold on best model
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">14</div>
+                        <div>
+                            <strong>Generate DSS Report:</strong> Risk scores, classifications, recommendations
+                        </div>
+                    </div>
+                    
+                    <div class="flow-step">
+                        <div class="step-number">15</div>
+                        <div>
+                            <strong>Deploy Dashboard:</strong> Interactive Streamlit web interface
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- TECHNOLOGIES SECTION -->
+            <section id="technologies">
+                <h2>🛠️ Technologies Used</h2>
+                
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <h4>Python 3.12</h4>
+                        <p>Core programming language for the entire system</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Pandas & NumPy</h4>
+                        <p>Data manipulation, cleaning, and numerical operations</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Scikit-Learn</h4>
+                        <p>Machine learning models, preprocessing, evaluation, cross-validation</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>XGBoost & LightGBM</h4>
+                        <p>Advanced gradient boosting models</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Imbalanced-Learn (SMOTE)</h4>
+                        <p>Handle class imbalance in training data</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Matplotlib & Seaborn</h4>
+                        <p>Static visualizations for EDA and feature importance</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Plotly</h4>
+                        <p>Interactive charts for the Streamlit dashboard</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Streamlit</h4>
+                        <p>Web framework for building the interactive dashboard</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>SHAP</h4>
+                        <p>Model interpretability and feature explanation</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>MLxtend</h4>
+                        <p>Association rules mining for bonus feature</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Joblib</h4>
+                        <p>Persist models and scalers for deployment</p>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <h4>Scipy</h4>
+                        <p>Statistical operations and hierarchical clustering</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ARCHITECTURE SECTION -->
+            <section id="architecture">
+                <h2>🏗️ Project Architecture</h2>
+                
+                <h3>Folder Structure</h3>
+                <div class="folder-structure">
+software_defect_prediction/
+│
+├── data/
+│   ├── raw/                  # Original ARFF files
+│   └── processed/            # Cleaned CSV files
+│       ├── X_train.csv
+│       ├── X_test.csv
+│       ├── y_train.csv
+│       ├── y_test.csv
+│       ├── processed_full.csv
+│       └── scaler.joblib
+│
+├── notebooks/
+│   ├── 01_EDA.ipynb
+│   ├── 02_Preprocessing.ipynb
+│   ├── 03_ML_Models.ipynb
+│   ├── 04_DSS_Dashboard.ipynb
+│   └── 05_Bonus_Rules_Clustering.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_loader.py        # Load/download datasets
+│   ├── preprocessor.py       # Data cleaning & preparation
+│   ├── eda.py                # Exploratory analysis
+│   ├── models.py             # ML model training
+│   ├── evaluator.py          # Evaluation metrics
+│   ├── dss.py                # Decision support system
+│   └── utils.py              # Helper functions
+│
+├── dashboard/
+│   └── app.py                # Streamlit web interface
+│
+├── reports/
+│   ├── figures/              # All plots & images
+│   ├── model_comparison.csv  # Model metrics table
+│   ├── risk_ranking.csv      # Risk report
+│   └── best_model.joblib     # Best trained model
+│
+├── main.py                   # Pipeline runner
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project documentation
+                </div>
+                
+                <h3>Module Responsibilities</h3>
+                <div class="architecture-box">
+                    <strong>data_loader.py:</strong> Handles downloading/loading ARFF files, converts to DataFrame<br><br>
+                    <strong>preprocessor.py:</strong> Missing value imputation, duplicate removal, normalization, SMOTE<br><br>
+                    <strong>eda.py:</strong> Generates 6+ statistical plots and summaries<br><br>
+                    <strong>models.py:</strong> Trains 7 models, evaluates, performs cross-validation & GridSearch<br><br>
+                    <strong>evaluator.py:</strong> Computes metrics, creates confusion matrices and ROC curves<br><br>
+                    <strong>dss.py:</strong> Builds risk scores, classifications, and recommendations<br><br>
+                    <strong>utils.py:</strong> Reusable utilities (file I/O, logging, etc.)<br><br>
+                    <strong>dashboard/app.py:</strong> Streamlit 6-tab interactive interface<br><br>
+                    <strong>main.py:</strong> Orchestrates entire pipeline execution
+                </div>
+            </section>
+            
+            <!-- COMPONENTS SECTION -->
+            <section id="components">
+                <h2>📦 Core Components</h2>
+                
+                <h3>1. Data Preprocessing Module</h3>
+                <div class="highlight">
+                    <strong>Input:</strong> Raw software metrics (21+ features)<br>
+                    <strong>Steps:</strong><br>
+                    • Handle missing values (median imputation)<br>
+                    • Remove exact duplicates<br>
+                    • Encode target variable (True→1, False→0)<br>
+                    • Remove zero-variance columns<br>
+                    • StandardScaler normalization<br>
+                    • SMOTE resampling (if class imbalance)<br>
+                    • 80/20 stratified train/test split<br>
+                    <strong>Output:</strong> Normalized, balanced training data ready for ML
+                </div>
+                
+                <h3>2. EDA Module</h3>
+                <div class="highlight">
+                    <strong>Visualizations Generated:</strong><br>
+                    • Class Distribution (bar chart with %)<br>
+                    • Correlation Heatmap (full matrix)<br>
+                    • Feature Histograms (by defect class)<br>
+                    • Boxplots (top 8 correlated features)<br>
+                    • Statistical Feature Importance (SelectKBest)<br>
+                    • Outlier Detection (LOC, v(g), ev(g), n)<br>
+                    <strong>Statistical Reports:</strong><br>
+                    • Descriptive statistics (mean, std, min, max)<br>
+                    • Skewness and Kurtosis per feature<br>
+                    • Pearson correlation with target
+                </div>
+                
+                <h3>3. ML Models Module</h3>
+                <div class="highlight">
+                    <strong>7 Models Trained & Evaluated:</strong><br>
+                    • Decision Tree (depth=5)<br>
+                    • Random Forest (100 estimators)<br>
+                    • SVM (RBF kernel)<br>
+                    • Logistic Regression (max_iter=1000)<br>
+                    • Naive Bayes (Gaussian)<br>
+                    • XGBoost (gradient boosting)<br>
+                    • LightGBM (fast gradient boosting)<br>
+                    <strong>For Each Model:</strong><br>
+                    • Trained on SMOTE-balanced data<br>
+                    • Evaluated on original test set<br>
+                    • 6 metrics computed (Accuracy, Precision, Recall, F1, ROC-AUC, CM)<br>
+                    • Classification report printed
+                </div>
+                
+                <h3>4. Decision Support System (DSS)</h3>
+                <div class="highlight">
+                    <strong>Features:</strong><br>
+                    • Risk Score Calculation (0-100 scale)<br>
+                    • Risk Classification:<br>
+                    &nbsp;&nbsp;0-30: 🟢 LOW RISK<br>
+                    &nbsp;&nbsp;31-60: 🟡 MEDIUM RISK<br>
+                    &nbsp;&nbsp;61-80: 🟠 HIGH RISK<br>
+                    &nbsp;&nbsp;81-100: 🔴 CRITICAL RISK<br>
+                    • Module Ranking Table (sorted by risk)<br>
+                    • Alert System (CRITICAL modules flagged)<br>
+                    • Recommendations Engine (context-aware)<br>
+                    • QA Priority Queue (ordered testing list)
+                </div>
+                
+                <h3>5. Streamlit Dashboard</h3>
+                <div class="highlight">
+                    <strong>6 Interactive Tabs:</strong><br>
+                    • 📊 Data Overview: Dataset shape, class dist, stats<br>
+                    • 🔍 Exploratory Analysis: Interactive heatmap, histograms, boxplots<br>
+                    • 🤖 Model Performance: Metrics, confusion matrix, ROC curves<br>
+                    • 🚨 Risk Dashboard: KPIs, risk ranking, distribution<br>
+                    • 🔎 Module Inspector: Single module prediction & recommendations<br>
+                    • 📈 Feature Importance: RF/XGB importances + SHAP plots
+                </div>
+            </section>
+            
+            <!-- MODELS SECTION -->
+            <section id="models">
+                <h2>🤖 Machine Learning Models</h2>
+                
+                <h3>Model Selection Rationale</h3>
+                <p>
+                    Different models capture different patterns in the data. By training 7 models with different algorithms,
+                    we ensure robustness and can select the best performer for the specific task.
+                </p>
+                
+                <table class="model-comparison">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Key Strengths</th>
+                            <th>Use Case</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Decision Tree</strong></td>
+                            <td>Tree-based</td>
+                            <td>Interpretable, no scaling needed</td>
+                            <td>Baseline, rule extraction</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Random Forest</strong></td>
+                            <td>Ensemble</td>
+                            <td>Robust, feature importance, parallel</td>
+                            <td>Strong baseline, production</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SVM</strong></td>
+                            <td>Kernel-based</td>
+                            <td>Effective in high dimensions</td>
+                            <td>Complex non-linear patterns</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Logistic Regression</strong></td>
+                            <td>Linear</td>
+                            <td>Fast, probabilistic, interpretable</td>
+                            <td>Baseline, production</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Naive Bayes</strong></td>
+                            <td>Probabilistic</td>
+                            <td>Fast training, good for imbalanced</td>
+                            <td>Fast predictions, baseline</td>
+                        </tr>
+                        <tr>
+                            <td><strong>XGBoost</strong></td>
+                            <td>Gradient Boosting</td>
+                            <td>State-of-art, handles imbalance</td>
+                            <td>Best-in-class performance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LightGBM</strong></td>
+                            <td>Gradient Boosting</td>
+                            <td>Fast, memory efficient, scalable</td>
+                            <td>Large datasets, production</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Hyperparameter Tuning</h3>
+                <div class="info-box">
+                    GridSearchCV applied to top 2 models (based on Recall score)<br>
+                    Cross-validation: 3-Fold during grid search<br>
+                    Scoring metric: Recall (prioritize finding defects)<br>
+                    Parameters searched: n_estimators, max_depth, learning_rate, C, gamma
+                </div>
+                
+                <h3>Cross-Validation</h3>
+                <div class="info-box">
+                    Strategy: 5-Fold Stratified K-Fold<br>
+                    Applied to: Best model (highest Recall)<br>
+                    Metrics: Mean and Std for Accuracy, Precision, Recall, F1, ROC-AUC<br>
+                    Purpose: Ensure model generalization and robustness
+                </div>
+            </section>
+            
+            <!-- FEATURES SECTION -->
+            <section id="features">
+                <h2>✨ Key Features</h2>
+                
+                <h3>Core Features</h3>
+                <ul class="feature-list">
+                    <li><strong>Automated Data Pipeline:</strong> Download, clean, and prepare data with one command</li>
+                    <li><strong>7 ML Models:</strong> Comprehensive model comparison with best selection</li>
+                    <li><strong>Comprehensive Evaluation:</strong> 6 metrics per model + cross-validation</li>
+                    <li><strong>Decision Support System:</strong> Risk scores, classifications, recommendations</li>
+                    <li><strong>Interactive Dashboard:</strong> 6 tabs for exploration and decisions</li>
+                    <li><strong>Production Ready:</strong> Model persistence, error handling, logging</li>
+                </ul>
+                
+                <h3>Bonus Features</h3>
+                <ul class="feature-list">
+                    <li><strong>Association Rules Mining:</strong> Extract defect patterns using Apriori</li>
+                    <li><strong>Clustering Analysis:</strong> K-Means, DBSCAN, Hierarchical clustering</li>
+                    <li><strong>SHAP Interpretability:</strong> Model-agnostic explanations</li>
+                    <li><strong>Feature Importance Plots:</strong> From Random Forest & XGBoost</li>
+                </ul>
+            </section>
+            
+            <!-- USAGE SECTION -->
+            <section id="usage">
+                <h2>🚀 How to Run the Project</h2>
+                
+                <h3>Installation</h3>
+                <div class="code-block">
+# Clone or navigate to project directory
+cd software_defect_prediction
+
+# Create virtual environment
+python -m venv .venv
+
+# Activate virtual environment (Linux/Mac/WSL)
+source .venv/bin/activate
+
+# Activate virtual environment (Windows PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Install dependencies
+pip install -r requirements.txt
+                </div>
+                
+                <h3>Run the Full Pipeline</h3>
+                <div class="code-block">
+# Execute complete pipeline (data → preprocessing → EDA → models → DSS)
+python main.py
+
+# This will:
+# 1. Download KC1.arff (if missing)
+# 2. Preprocess and balance data
+# 3. Generate EDA plots
+# 4. Train 7 ML models
+# 5. Evaluate and compare models
+# 6. Generate risk report
+# 7. Save all outputs to reports/
+                </div>
+                
+                <h3>Launch Interactive Dashboard</h3>
+                <div class="code-block">
+# Start Streamlit web server
+streamlit run dashboard/app.py
+
+# Browser opens at http://localhost:8501
+# Explore 6 tabs interactively
+                </div>
+                
+                <h3>Quick Verification</h3>
+                <div class="code-block">
+# Check outputs
+ls -la reports/
+ls -la data/processed/
+
+# View model comparison
+python - << 'PY'
+import pandas as pd
+print(pd.read_csv("reports/model_comparison.csv").sort_values("Recall", ascending=False))
+print(pd.read_csv("reports/risk_ranking.csv").head())
+PY
+                </div>
+            </section>
+            
+            <!-- RESULTS SECTION -->
+            <section id="results">
+                <h2>📊 Expected Results</h2>
+                
+                <h3>Output Files Generated</h3>
+                <div class="success">
+                    <strong>Data Processed:</strong><br>
+                    • data/processed/X_train.csv (training features)<br>
+                    • data/processed/X_test.csv (test features)<br>
+                    • data/processed/y_train.csv (training labels)<br>
+                    • data/processed/y_test.csv (test labels)<br>
+                    • data/processed/scaler.joblib (for production)<br><br>
+                    
+                    <strong>Reports:</strong><br>
+                    • reports/model_comparison.csv (7 models × 6 metrics)<br>
+                    • reports/risk_ranking.csv (defect predictions + risk levels)<br>
+                    • reports/best_model.joblib (trained model for production)<br>
+                    • reports/feature_names.json (feature list)<br><br>
+                    
+                    <strong>Visualizations (reports/figures/):</strong><br>
+                    • class_distribution.png<br>
+                    • correlation_heatmap.png<br>
+                    • feature_histograms.png<br>
+                    • boxplots_by_class.png<br>
+                    • feature_importance_statistical.png<br>
+                    • outliers_detection.png<br>
+                    • cm_*.png (confusion matrix for each model)<br>
+                    • roc_curves_comparison.png<br>
+                    • feature_importance_rf.png<br>
+                    • feature_importance_xgb.png
+                </div>
+                
+                <h3>Key Metrics Output</h3>
+                <p>
+                    For each of the 7 models, the system computes and compares:
+                </p>
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <div class="label">Accuracy</div>
+                        <div class="value">~80-95%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Precision</div>
+                        <div class="value">~70-90%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Recall</div>
+                        <div class="value">~75-95%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">F1-Score</div>
+                        <div class="value">~75-92%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">ROC-AUC</div>
+                        <div class="value">~85-97%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Best Model</div>
+                        <div class="value">XGBoost/RF</div>
+                    </div>
+                </div>
+                
+                <h3>DSS Output Example</h3>
+                <div class="code-block">
+Module_ID | Risk_Score | Risk_Level       | Top_Risk_Factor | Recommendation
+----------|------------|------------------|-----------------|------------------
+25        | 92.5       | 🔴 CRITICAL RISK | v(g)            | Reduce cyclomatic complexity
+18        | 78.3       | 🟠 HIGH RISK     | loc             | Split into smaller functions
+42        | 45.2       | 🟡 MEDIUM RISK   | n               | Review and refactor
+7         | 15.6       | 🟢 LOW RISK      | e               | No immediate action needed
+                </div>
+            </section>
+            
+            <!-- BONUS SECTION -->
+            <section>
+                <h2>🎁 Bonus Features</h2>
+                
+                <h3>Association Rules Mining</h3>
+                <p>
+                    Discovers patterns in software metrics that lead to defects:
+                </p>
+                <div class="highlight">
+                    Example Rule: {complexity=High, modifications=High} → {defects=High}<br>
+                    • Support: 12% (found in 12% of modules)<br>
+                    • Confidence: 85% (85% of modules with this pattern had defects)<br>
+                    • Lift: 2.3 (2.3x more likely to have defects)
+                </div>
+                
+                <h3>Clustering Analysis</h3>
+                <p>
+                    Groups similar modules to identify risk zones:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>K-Means:</strong> Elbow method finds optimal clusters, PCA visualization</li>
+                    <li><strong>DBSCAN:</strong> Density-based clustering identifies outliers</li>
+                    <li><strong>Hierarchical:</strong> Dendrogram shows module relationships</li>
+                </ul>
+                
+                <h3>Model Interpretability (SHAP)</h3>
+                <p>
+                    Explains individual predictions: "Module X is high-risk because of high LOC and complexity"
+                </p>
+            </section>
+            
+            <!-- ADVANTAGES SECTION -->
+            <section>
+                <h2>💡 System Advantages</h2>
+                
+                <div class="highlight">
+                    <strong>1. Data-Driven Decision Making:</strong> Replace gut feeling with ML predictions<br>
+                    <strong>2. Risk Quantification:</strong> Assign numerical risk scores to modules<br>
+                    <strong>3. Automated Prioritization:</strong> QA teams know exactly what to test first<br>
+                    <strong>4. Actionable Recommendations:</strong> Specific guidance on how to fix each module<br>
+                    <strong>5. Cost Reduction:</strong> Focus limited QA resources on high-risk areas<br>
+                    <strong>6. Production Ready:</strong> Complete pipeline from data to deployment<br>
+                    <strong>7. Scalability:</strong> Handles large codebases efficiently<br>
+                    <strong>8. Interpretability:</strong> Understanding why predictions are made (SHAP)
+                </div>
+            </section>
+            
+            <!-- CONCLUSION -->
+            <section>
+                <h2>🎓 Conclusion</h2>
+                
+                <div class="goal-box">
+                    This Software Defect Prediction System demonstrates end-to-end machine learning engineering:
+                    from raw data acquisition, through rigorous preprocessing and exploratory analysis, to training
+                    multiple competitive models, and finally deploying an interactive decision support interface.
+                    <br><br>
+                    The system is production-ready, interpretable, and directly applicable to real software development workflows.
+                </div>
+                
+                <h3>For Your Professor</h3>
+                <p>
+                    <strong>This project demonstrates:</strong>
+                </p>
+                <ul class="feature-list">
+                    <li>Complete data science pipeline design</li>
+                    <li>Effective preprocessing and data cleaning strategies</li>
+                    <li>Comparison of multiple ML algorithms</li>
+                    <li>Rigorous model evaluation (6 metrics + cross-validation)</li>
+                    <li>Hyperparameter tuning and optimization</li>
+                    <li>Business-focused DSS implementation</li>
+                    <li>Interactive UI/UX (Streamlit dashboard)</li>
+                    <li>Production-ready code quality</li>
+                    <li>Professional documentation and visualization</li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer>
+            <p><strong>Software Defect Prediction System</strong> | A Complete Machine Learning Project</p>
+            <p>Built with Python, Scikit-Learn, XGBoost, Streamlit | Generated: 2026</p>
+            <p>For questions or improvements, refer to the project README.md</p>
+        </footer>
+    </div>
+</body>
+</html>
