@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software Defect Prediction — Live Simulation (Dark Mode)</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121821;
+      --panel-2: #0f141b;
+      --text: #e6edf3;
+      --muted: #9aa4b2;
+      --accent: #58a6ff;
+      --accent-2: #a5d6ff;
+      --good: #3fb950;
+      --warn: #f78166;
+      --border: #273043;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at top, #0f1420, #0b0f14 50%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 30px auto 60px;
+      padding: 0 22px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 10px 30px var(--shadow);
+    }
+    h1, h2, h3 { margin: 0 0 10px; line-height: 1.25; }
+    h1 { font-size: 32px; }
+    h2 { font-size: 22px; color: var(--accent); }
+    h3 { font-size: 16px; color: var(--accent-2); }
+    p { margin: 8px 0; }
+    .tag {
+      display: inline-block;
+      background: #1a2332;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #111826;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 3px 6px 0 0;
+    }
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--panel-2);
+    }
+    .step .num {
+      background: #0e1a2b;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--accent);
+      padding: 6px 0;
+    }
+    .log {
+      background: #0e141f;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 12px;
+      color: #b6c2cf;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th {
+      background: #101826;
+      color: var(--accent-2);
+    }
+    @media (max-width: 980px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="card">
+      <h1>Software Defect Prediction — Live Simulation</h1>
+      <p class="muted">
+        A formal, step‑by‑step walkthrough of the project pipeline, narrated as if it is running now.
+      </p>
+      <div style="margin-top: 10px;">
+        <span class="tag">Dataset: NASA PROMISE KC1</span>
+        <span class="tag">Target: defects (true/false)</span>
+        <span class="tag">Inputs: LOC + McCabe + Halstead + Branch Count</span>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top: 16px;">
+      <div class="card">
+        <h2>Project Purpose</h2>
+        <p>
+          Predict defect‑prone code modules using static software metrics.
+          This enables smarter testing, focused code review, and better maintenance decisions.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Feature Categories</h2>
+        <div>
+          <span class="chip">LOC (Lines of Code)</span>
+          <span class="chip">McCabe Complexity</span>
+          <span class="chip">Halstead Metrics</span>
+          <span class="chip">Branch Count</span>
+        </div>
+        <p class="muted">All are module‑level static measurements, not raw code.</p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 16px;">
+      <h2>Live Simulation (Numbered Steps)</h2>
+      <div class="timeline">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h3>Data Loading</h3>
+            <p><strong>Goal:</strong> load KC1 dataset into memory.</p>
+            <p><strong>Method:</strong> parse ARFF → DataFrame → verify schema.</p>
+            <div class="log">
+              [INFO] Loading KC1.arff...<br/>
+              [INFO] Rows: 2109 | Columns: 22<br/>
+              [INFO] Target 'defects': {false: 1783, true: 326}
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h3>Preprocessing</h3>
+            <p><strong>Goal:</strong> clean and standardize data.</p>
+            <p><strong>Method:</strong> verify missing values, scale features, split train/test.</p>
+            <div class="log">
+              [INFO] Missing values: 0<br/>
+              [INFO] Train/Test split: 80/20<br/>
+              [INFO] Scaling: StandardScaler
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h3>Exploratory Data Analysis (EDA)</h3>
+            <p><strong>Goal:</strong> understand metric distributions and defect patterns.</p>
+            <p><strong>Method:</strong> histograms + correlation heatmap.</p>
+            <div class="log">
+              [PLOT] LOC distribution: defective modules skew higher<br/>
+              [PLOT] Correlation heatmap: LOC ↔ Halstead volume strong
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <div>
+            <h3>Model Training</h3>
+            <p><strong>Goal:</strong> train multiple ML models for comparison.</p>
+            <p><strong>Method:</strong> fit 7 algorithms using the same split.</p>
+            <div class="log">
+              [INFO] Training RandomForest... done<br/>
+              [INFO] Training XGBoost... done<br/>
+              [INFO] Training LightGBM... done
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">5</div>
+          <div>
+            <h3>Evaluation</h3>
+            <p><strong>Goal:</strong> compare performance using quality metrics.</p>
+            <p><strong>Method:</strong> Accuracy, Precision, Recall, F1, ROC‑AUC.</p>
+            <div class="log">
+              [INFO] Model comparison saved: reports/model_comparison.csv<br/>
+              [PLOT] ROC curves show top models above baseline
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">6</div>
+          <div>
+            <h3>Decision Support System (DSS)</h3>
+            <p><strong>Goal:</strong> rank modules by defect risk for action.</p>
+            <p><strong>Method:</strong> sort by predicted probability + alerts.</p>
+            <div class="log">
+              [ALERT] High‑risk modules identified: 145<br/>
+              [INFO] Risk report saved: reports/risk_report.csv
+            </div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">7</div>
+          <div>
+            <h3>Dashboard & Reports</h3>
+            <p><strong>Goal:</strong> provide interactive visual explanation.</p>
+            <p><strong>Method:</strong> Streamlit dashboard + saved figures.</p>
+            <div class="log">
+              [INFO] Dashboard running at http://localhost:8501
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top: 16px;">
+      <div class="card">
+        <h2>Outputs Generated</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Output</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>reports/model_comparison.csv</td><td>Performance summary across models</td></tr>
+            <tr><td>reports/figures/</td><td>EDA + evaluation charts</td></tr>
+            <tr><td>reports/risk_report.csv</td><td>Ranked defect risk list</td></tr>
+            <tr><td>DSS Alerts</td><td>High‑risk module notifications</td></tr>
+            <tr><td>Streamlit Dashboard</td><td>Interactive visualization</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>Real‑World Value</h2>
+        <p><strong>Testing:</strong> focus on risky modules first.</p>
+        <p><strong>Review:</strong> assign reviewers to high‑risk code.</p>
+        <p><strong>Maintenance:</strong> prioritize refactoring where defects are likely.</p>
+        <p class="muted">
+          Outcome: fewer defects, lower QA cost, and better engineering decisions.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 16px;">
+      <h2>Final Summary</h2>
+      <p>
+        This project converts static software metrics into actionable defect predictions.
+        The pipeline provides an end‑to‑end, data‑driven process to guide testing and
+        maintenance with measurable impact on software quality.
+      </p>
+    </section>
+
+    <div class="footer">Dark‑mode visualization ready for presentation.</div>
+  </div>
+</body>
+</html>

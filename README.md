@@ -50,6 +50,7 @@ python main.py
 ```bash
 streamlit run dashboard/app.py
 ```
+Upload a CSV or ARFF file in the sidebar to run the full pipeline from the web app.
 
 ## Dataset
 

@@ -72,27 +72,68 @@ def _encode_target(df: pd.DataFrame, target_col: str) -> pd.DataFrame:
             "y": 1,
             "n": 0,
             "defective": 1,
+            "defect": 1,
+            "buggy": 1,
+            "bug": 1,
             "clean": 0,
+            "non-defective": 0,
+            "nondefective": 0,
+            "ok": 0,
             "1": 1,
             "0": 0,
         }
-        if df[target_col].dtype == bool:
-            df[target_col] = df[target_col].map({True: 1, False: 0})
+        series = df[target_col]
+        if pd.api.types.is_bool_dtype(series):
+            df[target_col] = series.map({True: 1, False: 0})
+        elif pd.api.types.is_numeric_dtype(series):
+            unique_vals = pd.Series(series.dropna().unique())
+            if unique_vals.empty:
+                raise ValueError("Target column has no non-null values.")
+            unique_set = set(unique_vals.tolist())
+            if unique_set.issubset({0, 1}):
+                df[target_col] = series.astype(int)
+            elif len(unique_vals) == 2:
+                min_val = unique_vals.min()
+                max_val = unique_vals.max()
+                df[target_col] = series.map({min_val: 0, max_val: 1})
+            else:
+                min_val = unique_vals.min()
+                if min_val == 0:
+                    df[target_col] = (series > 0).astype(int)
+                else:
+                    df[target_col] = (series >= unique_vals.median()).astype(int)
         else:
-            df[target_col] = (
-                df[target_col]
-                .astype(str)
-                .str.strip()
-                .str.lower()
-                .map(mapping)
-            )
+            normalized = series.astype(str).str.strip().str.lower()
+            mapped = normalized.map(mapping)
+            if mapped.isna().any():
+                unique_vals = sorted(set(normalized.dropna().unique()))
+                if len(unique_vals) == 2:
+                    positive_markers = ("defect", "bug", "fault", "true", "yes", "y", "1", "pos")
+                    negative_markers = ("clean", "false", "no", "n", "0", "neg")
+                    pos_hits = [val for val in unique_vals if any(marker in val for marker in positive_markers)]
+                    neg_hits = [val for val in unique_vals if any(marker in val for marker in negative_markers)]
+                    if pos_hits and neg_hits:
+                        inferred = {pos_hits[0]: 1, neg_hits[0]: 0}
+                        df[target_col] = normalized.map(inferred)
+                    else:
+                        raise ValueError(
+                            "Unrecognized binary labels in target column. "
+                            f"Found values {unique_vals}."
+                        )
+                else:
+                    raise ValueError(
+                        "Target column must be binary or numeric. "
+                        f"Found string values {unique_vals}."
+                    )
+            else:
+                df[target_col] = mapped
         if df[target_col].isna().any():
             raise ValueError("Target encoding resulted in NaN values.")
         print("[INFO] Target distribution:")
         print(df[target_col].value_counts())
         return df
     except (KeyError, ValueError, TypeError) as exc:
-        print("[ERROR] Failed encoding target variable")
+        print(f"[ERROR] Failed encoding target variable: {exc}")
         raise exc
 
 
@@ -114,7 +155,24 @@ def _normalize_features(df: pd.DataFrame, target_col: str, output_dir: Path) -> 
     try:
         scaler = StandardScaler()
         feature_cols = [col for col in df.columns if col != target_col]
-        scaled = scaler.fit_transform(df[feature_cols])
+        
+        # Handle NaN and infinite values before scaling
+        df_clean = df[feature_cols].copy()
+        
+        # Replace infinite values with NaN
+        df_clean = df_clean.replace([np.inf, -np.inf], np.nan)
+        
+        # Fill remaining NaN with column median
+        for col in df_clean.columns:
+            if df_clean[col].isna().any():
+                median = df_clean[col].median()
+                df_clean[col].fillna(median, inplace=True)
+        
+        # Verify no NaN or inf remain
+        if df_clean.isna().any().any() or np.isinf(df_clean.values).any():
+            raise ValueError("Data contains NaN or infinite values after cleaning")
+        
+        scaled = scaler.fit_transform(df_clean)
         scaled_df = pd.DataFrame(scaled, columns=feature_cols)
         scaled_df[target_col] = df[target_col].values
         scaler_path = output_dir / "scaler.joblib"

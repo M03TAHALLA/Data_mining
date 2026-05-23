@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software Defect Prediction — A to Z Project Visualization</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121821;
+      --panel-2: #0f141b;
+      --text: #e6edf3;
+      --muted: #9aa4b2;
+      --accent: #58a6ff;
+      --accent-2: #a5d6ff;
+      --good: #3fb950;
+      --warn: #f78166;
+      --border: #273043;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at top, #0f1420, #0b0f14 50%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 30px auto 60px;
+      padding: 0 22px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: 0 10px 30px var(--shadow);
+    }
+    h1, h2, h3 { margin: 0 0 10px; line-height: 1.25; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 22px; color: var(--accent); }
+    h3 { font-size: 16px; color: var(--accent-2); }
+    p { margin: 8px 0; }
+    .tag {
+      display: inline-block;
+      background: #1a2332;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+    }
+    .muted { color: var(--muted); }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #111826;
+      font-size: 12px;
+      color: var(--muted);
+      margin: 3px 6px 0 0;
+    }
+    .bar {
+      height: 10px;
+      border-radius: 999px;
+      background: #1a2332;
+      border: 1px solid var(--border);
+      overflow: hidden;
+      margin: 6px 0 10px;
+    }
+    .bar > span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #3fb950, #58a6ff);
+      border-radius: 999px;
+    }
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 12px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--panel-2);
+    }
+    .step .num {
+      background: #0e1a2b;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 700;
+      color: var(--accent);
+      padding: 6px 0;
+    }
+    .flow {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #0f151f;
+      padding: 10px;
+      overflow: auto;
+    }
+    .legend {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th {
+      background: #101826;
+      color: var(--accent-2);
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .kpi .card {
+      padding: 14px;
+      text-align: center;
+    }
+    .kpi .value {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    details {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      background: #0f151f;
+    }
+    summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    @media (max-width: 980px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-2, .grid-3, .kpi { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="card">
+        <h1>Software Defect Prediction — A to Z Visualization</h1>
+        <p class="muted">
+          End‑to‑end view of the project: purpose, data, pipeline, models,
+          evaluation, decision support, outputs, and usage.
+        </p>
+        <div style="margin-top: 10px;">
+          <span class="tag">Project Type: ML Pipeline</span>
+          <span class="tag">Domain: Software Quality</span>
+          <span class="tag">Dataset: NASA PROMISE (KC1)</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Goal (Plain Explanation)</h2>
+        <p>
+          Predict which code modules are likely to contain defects using
+          static software metrics. This helps teams prioritize testing,
+          reviews, and refactoring.
+        </p>
+        <div class="bar"><span style="width: 85%"></span></div>
+        <p class="muted">High risk modules → test first → fewer bugs.</p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 16px;">
+      <h2>Project Story in One Line</h2>
+      <p>
+        We transform code metrics into predictive insights so quality
+        teams can focus effort where defects are most likely.
+      </p>
+    </section>
+
+    <section class="kpi" style="margin-top: 14px;">
+      <div class="card">
+        <div class="value">2,109</div>
+        <div class="muted">Modules (KC1)</div>
+      </div>
+      <div class="card">
+        <div class="value">22</div>
+        <div class="muted">Metrics / Features</div>
+      </div>
+      <div class="card">
+        <div class="value">7</div>
+        <div class="muted">ML Models</div>
+      </div>
+      <div class="card">
+        <div class="value">15.45%</div>
+        <div class="muted">Defect Ratio</div>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top: 16px;">
+      <div class="card">
+        <h2>Inputs</h2>
+        <p>Module‑level metrics, not raw source code.</p>
+        <div>
+          <span class="chip">LOC</span>
+          <span class="chip">Cyclomatic Complexity</span>
+          <span class="chip">Halstead Volume</span>
+          <span class="chip">Halstead Effort</span>
+          <span class="chip">Branch Count</span>
+          <span class="chip">Defects (Target)</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Outputs</h2>
+        <p>Actionable artifacts and decision support.</p>
+        <div>
+          <span class="chip">Model Comparison CSV</span>
+          <span class="chip">ROC Curves</span>
+          <span class="chip">Confusion Matrices</span>
+          <span class="chip">Risk Report</span>
+          <span class="chip">Priority Queue</span>
+          <span class="chip">Dashboard</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 16px;">
+      <h2>Full Pipeline (A → Z)</h2>
+      <div class="timeline">
+        <div class="step">
+          <div class="num">A</div>
+          <div>
+            <h3>Acquire Data</h3>
+            <p>Download KC1.arff into <code>data/raw/</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">B</div>
+          <div>
+            <h3>Build Dataset</h3>
+            <p>Parse ARFF, clean columns, rename target to <code>defects</code>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">C</div>
+          <div>
+            <h3>Clean & Preprocess</h3>
+            <p>Handle missing values, normalize, split train/test.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">D</div>
+          <div>
+            <h3>Discover (EDA)</h3>
+            <p>Visualize distributions, correlations, and defects vs metrics.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">E</div>
+          <div>
+            <h3>Engineer Models</h3>
+            <p>Train 7 ML models with consistent preprocessing.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">F</div>
+          <div>
+            <h3>Evaluate</h3>
+            <p>Compute Accuracy, Precision, Recall, F1, ROC‑AUC.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">G</div>
+          <div>
+            <h3>Generate DSS</h3>
+            <p>Rank modules by risk; produce alerts and risk report.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">H</div>
+          <div>
+            <h3>Human Consumption</h3>
+            <p>Dashboard + reports enable decision‑making.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 16px;">
+      <h2>Architecture Overview</h2>
+      <div class="flow">
+        <svg viewBox="0 0 1200 420" width="100%" height="420" role="img" aria-label="Project architecture flow">
+          <defs>
+            <style>
+              .box { fill:#121b2a; stroke:#2b3b55; stroke-width:2; }
+              .text { fill:#e6edf3; font-size:14px; font-family:Segoe UI, sans-serif; }
+              .sub { fill:#9aa4b2; font-size:12px; }
+              .arrow { stroke:#58a6ff; stroke-width:2; marker-end:url(#arrow); }
+            </style>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+              <path d="M0,0 L0,6 L9,3 z" fill="#58a6ff" />
+            </marker>
+          </defs>
+
+          <rect class="box" x="30" y="40" width="230" height="90" rx="12"/>
+          <text class="text" x="50" y="70">KC1 Dataset</text>
+          <text class="sub" x="50" y="92">ARFF → DataFrame</text>
+
+          <rect class="box" x="320" y="40" width="230" height="90" rx="12"/>
+          <text class="text" x="340" y="70">Preprocessing</text>
+          <text class="sub" x="340" y="92">Clean + Split + Scale</text>
+
+          <rect class="box" x="610" y="40" width="230" height="90" rx="12"/>
+          <text class="text" x="630" y="70">EDA</text>
+          <text class="sub" x="630" y="92">Distributions + Correlations</text>
+
+          <rect class="box" x="900" y="40" width="230" height="90" rx="12"/>
+          <text class="text" x="920" y="70">Model Training</text>
+          <text class="sub" x="920" y="92">7 ML Algorithms</text>
+
+          <rect class="box" x="260" y="220" width="250" height="110" rx="12"/>
+          <text class="text" x="280" y="250">Evaluation</text>
+          <text class="sub" x="280" y="272">Precision, Recall, F1, ROC</text>
+
+          <rect class="box" x="560" y="220" width="250" height="110" rx="12"/>
+          <text class="text" x="580" y="250">Decision Support</text>
+          <text class="sub" x="580" y="272">Risk Queue + Alerts</text>
+
+          <rect class="box" x="860" y="220" width="250" height="110" rx="12"/>
+          <text class="text" x="880" y="250">Dashboard</text>
+          <text class="sub" x="880" y="272">Streamlit + Visuals</text>
+
+          <line class="arrow" x1="260" y1="85" x2="320" y2="85"/>
+          <line class="arrow" x1="550" y1="85" x2="610" y2="85"/>
+          <line class="arrow" x1="840" y1="85" x2="900" y2="85"/>
+          <line class="arrow" x1="1015" y1="130" x2="1015" y2="220"/>
+          <line class="arrow" x1="900" y1="275" x2="810" y2="275"/>
+          <line class="arrow" x1="560" y1="275" x2="510" y2="275"/>
+        </svg>
+      </div>
+      <div class="legend" style="margin-top: 8px;">
+        <span><i class="dot" style="background:#58a6ff"></i> Pipeline flow</span>
+        <span><i class="dot" style="background:#3fb950"></i> Model outcomes</span>
+        <span><i class="dot" style="background:#f78166"></i> Risk decisions</span>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top: 16px;">
+      <div class="card">
+        <h2>Models Used</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Why It’s Used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Decision Tree</td><td>Interpretable baseline</td></tr>
+            <tr><td>Random Forest</td><td>Strong generalization</td></tr>
+            <tr><td>SVM (RBF)</td><td>Handles non-linear boundaries</td></tr>
+            <tr><td>Logistic Regression</td><td>Fast, probabilistic</td></tr>
+            <tr><td>Naive Bayes</td><td>Simple & robust</td></tr>
+            <tr><td>XGBoost</td><td>High accuracy on tabular data</td></tr>
+            <tr><td>LightGBM</td><td>Efficient gradient boosting</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>Key Metrics</h2>
+        <p>Metrics are chosen to optimize defect detection.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Accuracy</td><td>Overall correctness</td></tr>
+            <tr><td>Precision</td><td>How many predicted defects are real</td></tr>
+            <tr><td>Recall</td><td>How many real defects were found</td></tr>
+            <tr><td>F1</td><td>Balance of precision/recall</td></tr>
+            <tr><td>ROC‑AUC</td><td>Ranking quality across thresholds</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grid-2" style="margin-top: 16px;">
+      <div class="card">
+        <h2>Project Files Map</h2>
+        <pre style="color:#a5d6ff; background:#0e141f; padding:12px; border-radius:12px; border:1px solid var(--border);">
+software_defect_prediction/
+├── data/
+│   ├── raw/            ← KC1.arff
+│   └── processed/      ← cleaned datasets
+├── src/
+│   ├── data_loader.py  ← download/load data
+│   ├── preprocessor.py ← clean & split
+│   ├── eda.py          ← plots
+│   ├── models.py       ← train models
+│   ├── evaluator.py    ← metrics
+│   ├── dss.py          ← risk queue + alerts
+│   └── utils.py        ← helpers
+├── reports/
+│   ├── model_comparison.csv
+│   └── figures/
+├── dashboard/
+│   └── app.py
+└── main.py             ← pipeline runner
+        </pre>
+      </div>
+      <div class="card">
+        <h2>Decision Support System (DSS)</h2>
+        <p>
+          DSS transforms model predictions into a priority queue and
+          risk report so managers can allocate testing resources.
+        </p>
+        <ul>
+          <li>Sort modules by predicted defect probability</li>
+          <li>Trigger alerts for high‑risk modules</li>
+          <li>Summaries in <code>reports/</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top: 16px;">
+      <h2>How to Run & Test</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Run Pipeline</h3>
+          <pre style="background:#0e141f; padding:10px; border-radius:10px; border:1px solid var(--border);">pip install -r requirements.txt
+python main.py</pre>
+        </div>
+        <div>
+          <h3>Launch Dashboard</h3>
+          <pre style="background:#0e141f; padding:10px; border-radius:10px; border:1px solid var(--border);">streamlit run dashboard/app.py</pre>
+        </div>
+      </div>
+      <p class="muted">Check outputs in <code>reports/</code> and <code>data/processed/</code>.</p>
+    </section>
+
+    <section class="grid-2" style="margin-top: 16px;">
+      <details>
+        <summary>Limitations</summary>
+        <p>
+          Predictions rely on static metrics, not runtime behavior.
+          The dataset is imbalanced (defects are ~15%), so recall
+          is prioritized.
+        </p>
+      </details>
+      <details>
+        <summary>Future Extensions</summary>
+        <p>
+          Add more datasets (JM1, KC2), apply advanced balancing,
+          and integrate CI pipelines for continuous defect prediction.
+        </p>
+      </details>
+    </section>
+
+    <div class="footer">
+      Built for clear explanation and presentation. Dark mode enabled.
+    </div>
+  </div>
+</body>
+</html>

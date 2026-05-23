@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Optional
+import io
 
 import pandas as pd
 from scipy.io import arff
@@ -60,8 +61,26 @@ def load_raw_data(path: Path) -> pd.DataFrame:
             return df
         df = pd.read_csv(path)
         return df
-    except (ValueError, OSError, pd.errors.ParserError, arff.ParseError) as exc:
+    except (ValueError, OSError, pd.errors.ParserError, arff.ArffError) as exc:
         print(f"[ERROR] Failed to load dataset from {path}")
+        raise exc
+
+
+def load_raw_data_bytes(content: bytes, filename: str) -> pd.DataFrame:
+    """Load raw dataset from uploaded file bytes."""
+    try:
+        suffix = Path(filename).suffix.lower()
+        buffer = io.BytesIO(content)
+        if suffix == ".arff":
+            text_buffer = io.StringIO(content.decode("utf-8", errors="replace"))
+            raw_data, _meta = arff.loadarff(text_buffer)
+            df = pd.DataFrame(raw_data)
+            df = _decode_object_columns(df)
+            return df
+        df = pd.read_csv(buffer)
+        return df
+    except (ValueError, OSError, pd.errors.ParserError, arff.ArffError) as exc:
+        print("[ERROR] Failed to load dataset from uploaded file")
         raise exc
 
 

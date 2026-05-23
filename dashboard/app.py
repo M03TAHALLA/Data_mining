@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,6 +14,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import seaborn as sns
 import streamlit as st
+from scipy.io import arff
 
 import sys
 
@@ -20,14 +22,21 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 sys.path.append(str(BASE_DIR))
 
 from src.dss import classify_risk_level, recommendation_for_feature
+from src.data_loader import load_raw_data_bytes
+from src.pipeline import run_pipeline
 from src.utils import load_model, load_scaler
 
 
 st.set_page_config(page_title="Software Defect Prediction DSS", layout="wide")
 
+if "analysis_ready" not in st.session_state:
+    st.session_state.analysis_ready = False
+if "last_run_signature" not in st.session_state:
+    st.session_state.last_run_signature = None
+
 
 @st.cache_data
-def load_datasets() -> Dict[str, pd.DataFrame]:
+def load_datasets() -> Optional[Dict[str, pd.DataFrame]]:
     """Load processed datasets and reports."""
     data_dir = BASE_DIR / "data" / "processed"
     reports_dir = BASE_DIR / "reports"
@@ -39,12 +48,11 @@ def load_datasets() -> Dict[str, pd.DataFrame]:
             risk["Module_ID"] = pd.to_numeric(risk["Module_ID"], errors="coerce").fillna(0).astype(int)
         return {"processed": processed, "comparison": comparison, "risk": risk}
     except (OSError, pd.errors.ParserError) as exc:
-        st.error("Required data files not found. Please run main.py first.")
-        raise exc
+        return None
 
 
 @st.cache_resource
-def load_artifacts() -> Dict[str, Any]:
+def load_artifacts() -> Optional[Dict[str, Any]]:
     """Load model and scaler artifacts."""
     reports_dir = BASE_DIR / "reports"
     processed_dir = BASE_DIR / "data" / "processed"
@@ -54,12 +62,71 @@ def load_artifacts() -> Dict[str, Any]:
         feature_meta = json.loads((reports_dir / "feature_names.json").read_text(encoding="utf-8"))
         return {"model": model, "scaler": scaler, "feature_names": feature_meta["feature_names"]}
     except (OSError, json.JSONDecodeError, KeyError) as exc:
-        st.error("Model artifacts missing. Please run main.py first.")
-        raise exc
+        return None
 
+
+@st.cache_data
+def parse_uploaded_dataset(file_bytes: bytes, filename: str) -> pd.DataFrame:
+    """Parse an uploaded dataset into a DataFrame."""
+    return load_raw_data_bytes(file_bytes, filename)
+
+
+def _default_target_index(columns: List[str]) -> int:
+    """Choose a default target column index."""
+    for idx, col in enumerate(columns):
+        if col.strip().lower() == "defects":
+            return idx
+    return 0
+
+
+st.title("Software Defect Prediction — Decision Support System")
+
+st.sidebar.header("Upload Dataset")
+uploaded_file = st.sidebar.file_uploader("Upload CSV or ARFF", type=["csv", "arff"])
+uploaded_df: Optional[pd.DataFrame] = None
+target_col: Optional[str] = None
+
+if uploaded_file is None:
+    if not st.session_state.analysis_ready:
+        st.info("Upload a dataset to start the analysis.")
+        st.stop()
+else:
+    try:
+        file_bytes = uploaded_file.getvalue()
+        uploaded_df = parse_uploaded_dataset(file_bytes, uploaded_file.name)
+        default_index = _default_target_index(uploaded_df.columns.tolist())
+        target_col = st.sidebar.selectbox(
+            "Target column",
+            uploaded_df.columns.tolist(),
+            index=default_index,
+        )
+        st.sidebar.caption(f"Rows: {uploaded_df.shape[0]} | Columns: {uploaded_df.shape[1]}")
+    except (OSError, ValueError, pd.errors.ParserError, arff.ArffError) as exc:
+        st.sidebar.error("Failed to read uploaded file.")
+        st.stop()
+
+    if uploaded_df is not None:
+        signature = (hashlib.sha256(file_bytes).hexdigest(), target_col)
+        if signature != st.session_state.last_run_signature:
+            with st.spinner("Running full analysis..."):
+                try:
+                    run_pipeline(BASE_DIR, df=uploaded_df, target_col=target_col or "defects")
+                except (OSError, ValueError, KeyError, TypeError) as exc:
+                    st.error("Pipeline failed. Check the console logs for details.")
+                    st.stop()
+            st.cache_data.clear()
+            st.cache_resource.clear()
+            st.session_state.last_run_signature = signature
+            st.session_state.analysis_ready = True
+            st.success("Analysis complete. Dashboard updated.")
 
 datasets = load_datasets()
 artifacts = load_artifacts()
+
+if datasets is None or artifacts is None:
+    st.info("Run the pipeline (main.py) or upload a dataset to generate analysis outputs.")
+    st.stop()
+
 df = datasets["processed"]
 comparison = datasets["comparison"]
 risk = datasets["risk"]
@@ -67,8 +134,6 @@ risk = datasets["risk"]
 feature_names: List[str] = artifacts["feature_names"]
 model = artifacts["model"]
 scaler = artifacts["scaler"]
-
-st.title("Software Defect Prediction — Decision Support System")
 
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
     ["📊 Data Overview", "🔍 Exploratory Analysis", "🤖 Model Performance", "🚨 Risk Dashboard", "🔎 Module Inspector", "📈 Feature Importance"]
@@ -86,7 +151,7 @@ with tab1:
     class_counts = df["defects"].value_counts().reset_index()
     class_counts.columns = ["defects", "count"]
     fig = px.bar(class_counts, x="defects", y="count", text="count", title="Class Distribution")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
     st.subheader("Summary Statistics")
     st.dataframe(df.describe())
@@ -95,16 +160,16 @@ with tab2:
     st.subheader("Correlation Heatmap")
     corr = df.corr(numeric_only=True)
     heatmap_fig = px.imshow(corr, text_auto=True, color_continuous_scale="RdBu", title="Correlation Heatmap")
-    st.plotly_chart(heatmap_fig, use_container_width=True)
+    st.plotly_chart(heatmap_fig, width='stretch')
 
     st.subheader("Feature Histogram by Class")
     feature = st.selectbox("Select Feature", feature_names)
     hist_fig = px.histogram(df, x=feature, color="defects", barmode="overlay", title=f"Histogram: {feature}")
-    st.plotly_chart(hist_fig, use_container_width=True)
+    st.plotly_chart(hist_fig, width='stretch')
 
     st.subheader("Boxplot by Class")
     box_fig = px.box(df, x="defects", y=feature, color="defects", title=f"Boxplot: {feature}")
-    st.plotly_chart(box_fig, use_container_width=True)
+    st.plotly_chart(box_fig, width='stretch')
 
 with tab3:
     st.subheader("Model Metrics")
@@ -141,7 +206,7 @@ with tab3:
         barmode="group",
         title="Model Comparison",
     )
-    st.plotly_chart(comp_fig, use_container_width=True)
+    st.plotly_chart(comp_fig, width='stretch')
 
 with tab4:
     st.subheader("Risk KPIs")
@@ -177,12 +242,12 @@ with tab4:
     risk_counts = risk["Risk_Level"].value_counts().reset_index()
     risk_counts.columns = ["Risk_Level", "Count"]
     pie_fig = px.pie(risk_counts, names="Risk_Level", values="Count", title="Risk Distribution")
-    st.plotly_chart(pie_fig, use_container_width=True)
+    st.plotly_chart(pie_fig, width='stretch')
 
     st.subheader("Top 10 Most At-Risk Modules")
     top_risk = risk.head(10)
     bar_fig = px.bar(top_risk, x="Module_ID", y="Risk_Score", color="Risk_Level", title="Top 10 Risk Modules")
-    st.plotly_chart(bar_fig, use_container_width=True)
+    st.plotly_chart(bar_fig, width='stretch')
 
 with tab5:
     st.subheader("Module Inspector")
@@ -202,7 +267,7 @@ with tab5:
             gauge={"axis": {"range": [0, 100]}},
         )
     )
-    st.plotly_chart(gauge_fig, use_container_width=True)
+    st.plotly_chart(gauge_fig, width='stretch')
     st.write(f"Risk Level: {risk_level}")
     st.write(f"Top Risk Factor: {top_feature}")
     st.write(f"Recommendation: {recommendation}")
